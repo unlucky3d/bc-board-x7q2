@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>경계도시 캐릭터 제작판</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* 레이아웃: 상단 진행 요약 → 필터 줄 → 캐릭터 카드 격자(세력별 묶음) · 카드 누르면 상세 창 / 세력 탭은 지역 배경 15장 */
+:root{
+  --bg:#EEF0EC; --panel:#FAFBF8; --ink:#1B2024; --muted:#5D666C; --line:#D2D7D2;
+  --accent:#2F7A74; --accent-ink:#FFFFFF;
+  --done:#2E8B57; --doing:#C98A1B; --todo:#9AA3A8; --warn:#B3432F;
+  --shade:rgba(20,28,32,.55);
+  --f-display:"Black Han Sans","IBM Plex Sans KR",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12171A; --panel:#1A2125; --ink:#E6EAE7; --muted:#97A2A6; --line:#2C363B;
+  --accent:#55B3AA; --accent-ink:#0E1416; --done:#4FBF83; --doing:#E2A93B; --todo:#6B767B; --warn:#E06B55; --shade:rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12171A; --panel:#1A2125; --ink:#E6EAE7; --muted:#97A2A6; --line:#2C363B;
+  --accent:#55B3AA; --accent-ink:#0E1416; --done:#4FBF83; --doing:#E2A93B; --todo:#6B767B; --warn:#E06B55; --shade:rgba(0,0,0,.7); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.55}
+.wrap{max-width:1360px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(26px,4vw,38px);letter-spacing:.01em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0}
+header.top{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(130px,1fr));gap:10px;margin-top:18px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.stat .k{font-size:12px;color:var(--muted);letter-spacing:.02em}
+.stat .v{font-family:var(--f-mono);font-size:22px;font-variant-numeric:tabular-nums;margin-top:2px}
+.stat .v small{font-size:13px;color:var(--muted)}
+.bar{height:5px;background:var(--line);border-radius:3px;margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--done)}
+.stat.warn .v{color:var(--warn)}
+nav.tabs{display:flex;gap:6px;margin-top:22px;border-bottom:1px solid var(--line)}
+nav.tabs a{padding:8px 14px;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-color:var(--accent)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 6px}
+.filters input,.filters select{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
+.filters input{flex:1 1 200px;max-width:280px}
+.facchips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:4px 10px 4px 6px;font:inherit;font-size:12.5px;cursor:pointer}
+.chip .sw{width:12px;height:12px;border-radius:50%;border:1px solid rgba(0,0,0,.2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,.card:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.count{color:var(--muted);font-size:12.5px;margin:6px 0 0}
+.group{margin-top:26px}
+.group h2{display:flex;align-items:baseline;gap:10px;font-size:17px;margin:0 0 10px;font-weight:600}
+.group h2 .sw{width:14px;height:14px;border-radius:3px;align-self:center}
+.group h2 small{color:var(--muted);font-weight:400;font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;padding:0;min-width:0}
+.card:hover{border-color:var(--muted)}
+.thumbs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);aspect-ratio:4/3;max-width:100%}
+.thumbs>div{position:relative;background:var(--bg);overflow:hidden}
+.thumbs img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.thumbs .lbl{position:absolute;left:5px;bottom:5px;font-size:10.5px;background:var(--shade);color:#fff;padding:1px 6px;border-radius:4px}
+.ph{display:grid;place-items:center;height:100%;color:var(--muted);font-size:11.5px;text-align:center;padding:6px;background:repeating-linear-gradient(135deg,transparent 0 8px,color-mix(in srgb,var(--line) 55%,transparent) 8px 9px)}
+.cbody{padding:9px 11px 11px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.crow{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.cname{font-weight:600;font-size:14.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cid{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.meta{font-size:12px;color:var(--muted)}
+.wpn{font-size:12px;border-top:1px dashed var(--line);padding-top:5px;overflow-wrap:anywhere}
+.wpn b{font-weight:500;color:var(--ink)}
+.sts{display:flex;flex-wrap:wrap;gap:4px;margin-top:2px}
+.st{font-size:11px;border-radius:4px;padding:1px 6px;border:1px solid currentColor;line-height:1.5}
+.st.done{color:var(--done)} .st.doing{color:var(--doing)} .st.todo{color:var(--todo)} .st.none{color:var(--todo);border-style:dashed}
+.flag{font-size:11px;color:var(--warn);font-weight:500}
+/* 세력 탭 */
+.facgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:18px}
+.fac{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0}
+.fac img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;max-width:100%}
+.fac .fb{padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.fac h3{margin:0;font-size:16px;display:flex;gap:8px;align-items:baseline}
+.fac h3 small{color:var(--muted);font-weight:400;font-size:12.5px}
+.sws{display:flex;gap:4px}
+.sws span{width:22px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.15)}
+.kv{display:grid;grid-template-columns:72px 1fr;gap:3px 10px;font-size:12.5px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;min-width:0}
+/* 상세 창 */
+.modal{position:fixed;inset:0;background:var(--shade);display:flex;align-items:flex-start;justify-content:center;overflow:auto;z-index:20;padding-top:calc(24px + env(safe-area-inset-top,0px));padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+.sheet{background:var(--panel);color:var(--ink);border-radius:12px;max-width:1080px;width:100%;overflow:hidden;border:1px solid var(--line)}
+.shead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line)}
+.shead h2{margin:0;font-family:var(--f-display);font-weight:400;font-size:26px}
+.close{font:inherit;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:5px 12px;cursor:pointer}
+.imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.imgs figure{margin:0;background:var(--bg);display:flex;flex-direction:column;min-width:0}
+.imgs .box{aspect-ratio:3/4;max-width:100%;overflow:hidden}
+.imgs img{width:100%;height:100%;object-fit:contain;display:block}
+.imgs figcaption{font-size:12px;color:var(--muted);padding:6px 10px;display:flex;justify-content:space-between;gap:6px;background:var(--panel)}
+.sbody{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;padding:18px}
+.sec h4{margin:0 0 8px;font-size:12px;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.sec .kv{grid-template-columns:96px 1fr;font-size:13.5px;gap:6px 12px}
+.regionimg{width:100%;aspect-ratio:16/7;object-fit:cover;border-radius:8px;display:block;max-width:100%;margin-bottom:10px}
+.note{background:color-mix(in srgb,var(--warn) 12%,var(--panel));border:1px solid color-mix(in srgb,var(--warn) 45%,var(--line));border-radius:8px;padding:8px 12px;font-size:13px;margin:12px 18px 0}
+footer{margin-top:40px;color:var(--muted);font-size:12px}
+.notes{padding:0 18px 18px;display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
+.notes textarea{width:100%;min-height:96px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical}
+.notes .shared{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-height:96px;font-size:13.5px}
+.notes .hint{font-size:12px;color:var(--muted);margin-top:4px}
+.btn{font:inherit;font-size:13px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:7px 12px;cursor:pointer}
+.btn.ghost{background:var(--panel);color:var(--ink);border:1px solid var(--line)}
+.memo-mark{font-size:11px;color:var(--accent);font-weight:600}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13px;z-index:30}
+@media (max-width:760px){.notes{grid-template-columns:1fr}}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.sbody{grid-template-columns:1fr}.imgs{grid-template-columns:1fr 1fr}.imgs figure:first-child{grid-column:1/-1}.imgs figure:first-child .box{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>경계도시 캐릭터 제작판</h1>
+      <p class="sub">플레이어블 83명 · 컨셉샷 → 무기 컨셉샷 → 3D 모델 진행 상황 · <span id="upd"></span></p>
+    </div>
+  </header>
+  <section class="stats" id="stats" aria-label="진행 요약"></section>
+  <nav class="tabs" aria-label="보기">
+    <a href="#list" id="t-list">캐릭터 목록</a>
+    <a href="#regions" id="t-regions">세력·지역</a>
+  </nav>
+
+  <main id="v-list">
+    <div class="filters">
+      <input id="q" type="search" placeholder="이름·무기·컨셉 검색" aria-label="검색">
+      <select id="job" aria-label="직업"><option value="">직업 전체</option></select>
+      <select id="stf" aria-label="상태">
+        <option value="">상태 전체</option>
+        <option value="c-todo">캐릭터 컨셉샷 미완료</option>
+        <option value="c-done">캐릭터 컨셉샷 완료</option>
+        <option value="w-todo">무기 컨셉샷 미완료</option>
+        <option value="m-done">3D 모델 완료</option>
+        <option value="form">형태 확인 필요</option>
+        <option value="worn">무기가 캐릭터에 포함</option>
+        <option value="memo">비고·메모 있음</option>
+      </select>
+      <button class="btn ghost" type="button" id="copyMemos">내 메모 전체 복사</button>
+    </div>
+    <div class="facchips" id="facchips"></div>
+    <p class="count" id="count"></p>
+    <div id="groups"></div>
+  </main>
+
+  <main id="v-regions" hidden>
+    <div class="facgrid" id="facgrid"></div>
+  </main>
+
+  <footer>근거: 경계도시_캐릭터컨셉_v1 · 제작수량계획_v1 · 스킬설계 v0.4 · 지역별 세계관 안내. 일러스트는 원본 축소본(참고용).</footer>
+</div>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+const D=window.AC_DATA; const F={}; D.factions.forEach(f=>F[f.id]=f);
+const C=D.chars;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ST={done:"완료",doing:"진행 중",todo:"미착수",none:"캐릭터에 포함"};
+// 내 메모: 이 브라우저에만 저장 → '내 메모 전체 복사'로 Claude 에게 보내면 공용 비고에 반영
+const MK="ac_board_memos_v1";
+let memos={}; try{memos=JSON.parse(localStorage.getItem(MK)||"{}")||{}}catch(e){memos={}}
+const saveMemos=()=>{try{localStorage.setItem(MK,JSON.stringify(memos))}catch(e){}};
+const hasMemo=c=>!!(c.note||(memos[c.id]||"").trim());
+function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2200);}
+$("#upd").textContent="갱신 "+D.updated;
+
+// 요약
+function stats(){
+  const n=C.length, w=C.filter(c=>!c.worn);
+  const cd=C.filter(c=>c.st.char==="done").length, wd=w.filter(c=>c.st.weapon==="done").length, md=C.filter(c=>c.st.model==="done").length;
+  const fc=C.filter(c=>c.formCheck).length;
+  const tile=(k,v,t,cls="")=>`<div class="stat ${cls}"><div class="k">${k}</div><div class="v">${v}<small> / ${t}</small></div>${t?`<div class="bar"><i style="width:${t?v/t*100:0}%"></i></div>`:""}</div>`;
+  $("#stats").innerHTML=tile("캐릭터 컨셉샷",cd,n)+tile("무기 컨셉샷",wd,w.length)+tile("3D 모델",md,n)+
+    `<div class="stat warn"><div class="k">형태 확인 필요</div><div class="v">${fc}<small> 명</small></div><div class="k" style="margin-top:6px">무기 포함형 ${C.length-w.length}명 → 무기 ${w.length}종</div></div>`;
+}
+
+// 필터
+const jobs=[...new Set(C.map(c=>c.job))]; jobs.forEach(j=>$("#job").insertAdjacentHTML("beforeend",`<option>${esc(j)}</option>`));
+let facOn=new Set();
+$("#facchips").innerHTML=D.factions.map(f=>`<button class="chip" type="button" data-f="${f.id}" aria-pressed="false"><span class="sw" style="background:${f.main}"></span>${esc(f.name)}</button>`).join("");
+$("#facchips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;const f=b.dataset.f;facOn.has(f)?facOn.delete(f):facOn.add(f);b.setAttribute("aria-pressed",facOn.has(f));render();});
+["q","job","stf"].forEach(id=>$("#"+id).addEventListener("input",render));
+
+function pass(c){
+  const q=$("#q").value.trim().toLowerCase();
+  if(q&&!(c.name+c.id+c.weapon+c.concept+c.job+F[c.fac].name).toLowerCase().includes(q))return false;
+  if($("#job").value&&c.job!==$("#job").value)return false;
+  if(facOn.size&&!facOn.has(c.fac))return false;
+  const s=$("#stf").value;
+  if(s==="c-todo"&&c.st.char==="done")return false;
+  if(s==="c-done"&&c.st.char!=="done")return false;
+  if(s==="w-todo"&&(c.worn||c.st.weapon==="done"))return false;
+  if(s==="m-done"&&c.st.model!=="done")return false;
+  if(s==="form"&&!c.formCheck)return false;
+  if(s==="worn"&&!c.worn)return false;
+  if(s==="memo"&&!hasMemo(c))return false;
+  return true;
+}
+const img=(src,alt,label)=>src?`<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy"><span class="lbl">${label}</span>`:`<div class="ph">${label}<br>아직 없음</div>`;
+function card(c){
+  return `<button class="card" type="button" data-id="${c.id}" aria-label="${esc(c.name)} 상세">
+    <div class="thumbs"><div>${img("img/"+c.id+".jpg",c.name+" 일러스트","일러스트")}</div><div>${img(c.conceptImg,c.name+" 컨셉샷","컨셉샷")}</div></div>
+    <div class="cbody">
+      <div class="crow"><span class="cname">${esc(c.name)}</span><span class="cid">${c.id}</span></div>
+      <div class="meta">${esc(F[c.fac].name)} · ${esc(c.job)} · ${esc(c.pos)}</div>
+      <div class="wpn">${c.worn?"🧤 ":""}<b>${esc(c.weapon)}</b> <span class="meta">(${esc(c.wform)})</span></div>
+      <div class="sts">
+        <span class="st ${c.st.char}">컨셉 ${ST[c.st.char]}</span>
+        <span class="st ${c.st.weapon}">무기 ${ST[c.st.weapon]}</span>
+        <span class="st ${c.st.model}">3D ${ST[c.st.model]}</span>
+      </div>
+      ${c.formCheck?`<div class="flag">형태 확인 필요</div>`:""}
+      ${hasMemo(c)?`<div class="memo-mark">✎ 비고 있음</div>`:""}
+    </div></button>`;
+}
+function render(){
+  const list=C.filter(pass);
+  $("#count").textContent=`${list.length}명 표시 중`;
+  $("#groups").innerHTML=D.factions.map(f=>{
+    const m=list.filter(c=>c.fac===f.id); if(!m.length)return"";
+    const done=m.filter(c=>c.st.char==="done").length;
+    return `<section class="group"><h2><span class="sw" style="background:${f.main}"></span>${esc(f.name)} <small>${esc(f.place)} · ${m.length}명 · 컨셉샷 ${done}/${m.length}</small></h2><div class="grid">${m.map(card).join("")}</div></section>`;
+  }).join("")||`<p class="count">조건에 맞는 캐릭터가 없습니다.</p>`;
+}
+$("#groups").addEventListener("click",e=>{const b=e.target.closest(".card");if(b)location.hash=b.dataset.id;});
+
+// 세력 탭
+function regions(){
+  $("#facgrid").innerHTML=D.factions.map(f=>{
+    const m=C.filter(c=>c.fac===f.id);
+    return `<article class="fac"><img src="img/${f.id}.jpg" alt="${esc(f.name)} 지역 배경" loading="lazy"><div class="fb">
+      <h3>${esc(f.name)} <small>${f.id} · ${esc(f.place)} · ${m.length}명</small></h3>
+      <div>${esc(f.lore)}</div>
+      <div class="sws" title="메인 / 서브 / 포인트"><span style="background:${f.main}"></span><span style="background:${f.sub}"></span><span style="background:${f.point}"></span></div>
+      <dl class="kv"><dt>실루엣</dt><dd>${esc(f.sil)}</dd><dt>소재</dt><dd>${esc(f.mat)}</dd><dt>무기 문법</dt><dd>${esc(f.wgram)}</dd><dt>이펙트</dt><dd>${esc(f.fx)}</dd><dt>피할 것</dt><dd>${esc(f.avoid)}</dd>
+      <dt>캐릭터</dt><dd>${m.map(c=>`<a href="#${c.id}">${esc(c.name)}</a>`).join(" · ")}</dd></dl>
+    </div></article>`;}).join("");
+}
+
+// 상세
+function detail(c){
+  const f=F[c.fac];
+  const fig=(src,cap,st)=>`<figure><div class="box">${src?`<img src="${esc(src)}" alt="${esc(c.name)} ${cap}">`:`<div class="ph">${cap}<br>아직 없음</div>`}</div><figcaption><span>${cap}</span>${st?`<span class="st ${st}">${ST[st]}</span>`:""}</figcaption></figure>`;
+  $("#sheet").innerHTML=`
+   <div class="shead"><div><div class="cid">${c.id} · ${esc(c.group)}</div><h2 id="m-title">${esc(c.name)}</h2><div class="meta">${esc(f.name)} · ${esc(c.job)} · ${esc(c.pos)} 사거리 ${c.range} · ${c.cost}코스트${c.unique?" · 고유 "+esc(c.unique):""}</div></div><button class="close" type="button" id="x">닫기</button></div>
+   ${c.formCheck?`<div class="note">형태 확인 필요 — ${esc(c.formCheck)}</div>`:""}
+   <div class="imgs" style="margin-top:${c.formCheck?12:0}px">${fig("img/"+c.id+".jpg","원본 일러스트 ("+esc(c.illusShot)+")","")}${fig(c.conceptImg,"캐릭터 컨셉샷",c.st.char)}${c.worn?`<figure><div class="box"><div class="ph">무기는 캐릭터에 포함<br>(${esc(c.weapon)})</div></div><figcaption><span>무기 컨셉샷</span><span class="st none">${ST.none}</span></figcaption></figure>`:fig(c.weaponImg,"무기 컨셉샷",c.st.weapon)}</div>
+   <div class="sbody">
+    <div class="sec"><h4>캐릭터</h4><dl class="kv">
+      <dt>컨셉</dt><dd>${esc(c.concept)}</dd>
+      <dt>스킬</dt><dd>${esc(c.skill)} — ${esc(c.role)}</dd>
+      <dt>스킬 연출</dt><dd>${esc(c.sig)}</dd>
+      <dt>의상 포인트</dt><dd>${esc(c.outfit)} <span class="meta">(일러스트 우선)</span></dd>
+      <dt>디테일</dt><dd>${esc(c.detail)}</dd>
+      <dt>리그·체형</dt><dd>${esc(c.rig)}${c.trait?" · "+esc(c.trait):""}</dd>
+      <dt>3D 모델</dt><dd><span class="st ${c.st.model}">${ST[c.st.model]}</span></dd>
+    </dl>
+    <h4 style="margin-top:16px">무기</h4><dl class="kv">
+      <dt>무기</dt><dd>${esc(c.weapon)}</dd>
+      <dt>형태</dt><dd>${esc(c.wform)}</dd>
+      <dt>세력 문법</dt><dd>${esc(f.wgram)}</dd>
+      <dt>소재</dt><dd>${esc(f.mat)}</dd>
+    </dl></div>
+    <div class="sec"><h4>지역 — ${esc(f.name)} · ${esc(f.place)}</h4>
+      <img class="regionimg" src="img/${f.id}.jpg" alt="${esc(f.name)} 지역 배경">
+      <dl class="kv">
+      <dt>배경</dt><dd>${esc(f.lore)}</dd>
+      <dt>세력 색</dt><dd><span class="sws"><span style="background:${f.main}" title="메인 ${f.main}"></span><span style="background:${f.sub}" title="서브 ${f.sub}"></span><span style="background:${f.point}" title="포인트 ${f.point}"></span></span><span class="meta">메인은 등 윗판·어깨 윗면·망토 안감에만</span></dd>
+      <dt>실루엣</dt><dd>${esc(f.sil)}</dd>
+      <dt>이펙트</dt><dd>${esc(f.fx)}</dd>
+      <dt>피할 것</dt><dd>${esc(c.avoid)}</dd>
+    </dl></div>
+   </div>
+   <div class="notes">
+    <div class="sec"><h4>비고 (공용 — 모두에게 보임)</h4><div class="shared">${c.note?esc(c.note):'<span class="meta">아직 없음</span>'}</div></div>
+    <div class="sec"><h4>내 메모</h4><textarea id="memo" placeholder="피드백·수정 요청을 적어 두세요">${esc(memos[c.id]||"")}</textarea>
+      <div class="hint">이 브라우저에 자동 저장됩니다. '내 메모 전체 복사'로 Claude 에게 보내면 공용 비고에 반영됩니다.</div></div>
+   </div>`;
+  $("#memo").addEventListener("input",e=>{const v=e.target.value;if(v.trim())memos[c.id]=v;else delete memos[c.id];saveMemos();});
+  $("#modal").hidden=false; $("#x").focus();
+  $("#x").onclick=()=>{history.length>1&&location.hash===("#"+c.id)?(location.hash="list"):(location.hash="list")};
+}
+$("#modal").addEventListener("click",e=>{if(e.target.id==="modal")location.hash="list";});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#modal").hidden)location.hash="list";});
+
+function route(){
+  const h=location.hash.slice(1);
+  const c=C.find(x=>x.id===h);
+  const reg=h==="regions";
+  $("#v-list").hidden=reg; $("#v-regions").hidden=!reg;
+  $("#t-list").setAttribute("aria-current",reg?"false":"page"); $("#t-regions").setAttribute("aria-current",reg?"page":"false");
+  if(c)detail(c); else {if(!$("#modal").hidden){$("#modal").hidden=true;render();}}
+}
+$("#copyMemos").addEventListener("click",()=>{
+  const ids=Object.keys(memos).filter(k=>memos[k].trim()).sort();
+  if(!ids.length){toast("저장된 메모가 없습니다");return;}
+  const txt="[경계도시 제작판 메모]\n"+ids.map(k=>{const c=C.find(x=>x.id===k);return `${k} ${c?c.name:""}: ${memos[k].trim()}`}).join("\n");
+  const done=()=>toast(`메모 ${ids.length}개를 복사했습니다`);
+  const fallback=()=>{const t=document.createElement("textarea");t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand("copy");done();}catch(e){toast("복사 실패 — 직접 선택해 주세요")}t.remove();};
+  try{navigator.clipboard.writeText(txt).then(done,fallback);}catch(e){fallback();}
+});
+stats(); render(); regions(); route();
+window.addEventListener("hashchange",route);
+})();
+</script>
+
+</body>
+</html>
