@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-16 23:20",
+"updated": "2026-11-16 23:50",
 "factions": [
 {
 "id": "F01",
@@ -1229,14 +1229,14 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
 "conceptImg": "img/concept/U031.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷",
-"memoRound": 1
+"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정",
+"memoRound": 2
 },
 {
 "id": "U032",
@@ -1560,14 +1560,14 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
 "conceptImg": "img/concept/U041.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 머릿결 좋게, 정면 바라보게",
-"memoRound": 1
+"note": "1차 수정(v2): 머릿결 좋게, 정면 바라보게 / 2차 메모: 확정",
+"memoRound": 2
 },
 {
 "id": "U042",
@@ -1660,14 +1660,14 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
 "conceptImg": "img/concept/U044.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 등 파인 드레스, 가슴 크게, 빨간 망토 제거",
-"memoRound": 1
+"note": "1차 수정(v2): 등 파인 드레스, 가슴 크게, 빨간 망토 제거 / v3: 앞뒤 일치 — 머리를 왼쪽 어깨 앞으로 넘겨 등이 세 뷰 모두에서 보이게 / 2차 메모: 확정",
+"memoRound": 2
 },
 {
 "id": "U045",
@@ -2090,14 +2090,14 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
 "conceptImg": "img/concept/U057.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 정면 바라보게",
-"memoRound": 1
+"note": "1차 수정(v2): 정면 바라보게 / 2차 메모: 확정",
+"memoRound": 2
 },
 {
 "id": "U058",
@@ -2487,14 +2487,14 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "done",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
 "conceptImg": "img/concept/U069.jpg",
 "weaponImg": "",
-"note": "1차 메모: 확정",
-"memoRound": 1
+"note": "1차 메모: 확정 / 2차 메모: 확정 취소 → 정면 바라보게 수정(v2)",
+"memoRound": 2
 },
 {
 "id": "U070",
@@ -2593,8 +2593,8 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U072.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 얼굴 비율 키움, 뒷모습 안대끈 보이게",
-"memoRound": 1
+"note": "1차 수정(v2): 얼굴 비율 키움, 뒷모습 안대끈 보이게 / 2차 메모: 얼굴이 커져 비율이 나빠짐 → 얼굴 살짝 줄임(v3)",
+"memoRound": 2
 },
 {
 "id": "U073",
@@ -2627,8 +2627,8 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U073.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 살짝 통통, 푸근한 아저씨 인상",
-"memoRound": 1
+"note": "1차 수정(v2): 살짝 통통, 푸근한 아저씨 인상 / 2차 메모: 얼굴 수정 → 사용자 제공 얼굴 사진 참고(v3)",
+"memoRound": 2
 },
 {
 "id": "U074",

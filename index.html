@@ -187,7 +187,9 @@ let memos={}; try{memos=JSON.parse(localStorage.getItem(MK)||"{}")||{}}catch(e){
 const saveMemos=()=>{try{localStorage.setItem(MK,JSON.stringify(memos))}catch(e){}};
 // 반영 완료된 메모 자동 비우기: data.js 의 memoRound 가 이 브라우저가 본 회차보다 크면 그 캐릭터의 내 메모를 비움
 (()=>{const RK="ac_board_memo_round_v1";let seen={};try{seen=JSON.parse(localStorage.getItem(RK)||"{}")||{}}catch(e){}
-  let n=0;C.forEach(c=>{if(c.memoRound&&c.memoRound>(seen[c.id]||0)){if(memos[c.id]){delete memos[c.id];n++;}seen[c.id]=c.memoRound;}});
+  let lc={};try{lc=JSON.parse(localStorage.getItem("ac_board_confirm_v1")||"{}")||{}}catch(e){}
+  let n=0;C.forEach(c=>{if(c.memoRound&&c.memoRound>(seen[c.id]||0)){if(memos[c.id]){delete memos[c.id];n++;}delete lc[c.id];seen[c.id]=c.memoRound;}});
+  try{localStorage.setItem("ac_board_confirm_v1",JSON.stringify(lc))}catch(e){}
   saveMemos();try{localStorage.setItem(RK,JSON.stringify(seen))}catch(e){}
   if(n)setTimeout(()=>toast(`반영 완료된 메모 ${n}개를 비웠습니다 (내용은 공용 비고에 있음)`),300);})();
 // 확정·메모 공유 저장: Claude 페이지에서는 db(모두에게 공유, Claude 가 읽음), 다른 곳에서는 이 브라우저에만
