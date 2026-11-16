@@ -170,7 +170,7 @@ const D=window.AC_DATA; const F={}; D.factions.forEach(f=>F[f.id]=f);
 const C=D.chars;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const ST={done:"완료",doing:"진행 중",todo:"미착수",none:"캐릭터에 포함"};
+const ST={done:"완료",doing:"검토 중",todo:"미착수",none:"캐릭터에 포함"};
 // 내 메모: 이 브라우저에만 저장 → '내 메모 전체 복사'로 Claude 에게 보내면 공용 비고에 반영
 const MK="ac_board_memos_v1";
 let memos={}; try{memos=JSON.parse(localStorage.getItem(MK)||"{}")||{}}catch(e){memos={}}
