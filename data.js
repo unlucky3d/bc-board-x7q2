@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-17 15:05",
+"updated": "2026-11-17 15:40",
 "factions": [
 {
 "id": "F01",
@@ -1069,7 +1069,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U026.jpg",
 "weaponImg": "img/weapon/U026.jpg",
-"note": "1차 메모: 확정 / 무기 v3: 손잡이 흰색·조금 길게",
+"note": "1차 메모: 확정 / 무기 v3: 손잡이 흰색·조금 길게 / 무기 v4: 원근 왜곡 없앤 직교 측면",
 "memoRound": 1
 },
 {
@@ -1235,7 +1235,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U031.jpg",
 "weaponImg": "img/weapon/U031.jpg",
-"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현 / 무기 수정 요청(중화기 형태)은 ChatGPT가 2번 거절 — v1 유지, 다른 방법 필요",
+"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현 / 무기 수정 요청(중화기 형태)은 ChatGPT가 2번 거절 — v1 유지, 다른 방법 필요 / 무기 v2: 어깨에 메는 단일 대포형(중화기)",
 "memoRound": 2
 },
 {
@@ -1561,7 +1561,7 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U041.jpg",
@@ -1666,7 +1666,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U044.jpg",
 "weaponImg": "img/weapon/U044.jpg",
-"note": "1차 수정(v2): 등 파인 드레스, 가슴 크게, 빨간 망토 제거 / v3: 앞뒤 일치 — 머리를 왼쪽 어깨 앞으로 넘겨 등이 세 뷰 모두에서 보이게 / 2차 메모: 확정 / 무기 v1: 집광 렌즈 정밀총 / 무기 v2: 총구·조준경 렌즈가 정면을 보던 형태 오류 고침(총신 방향으로 정리) / 무기 v3: 새 디자인으로 다시 뽑음",
+"note": "1차 수정(v2): 등 파인 드레스, 가슴 크게, 빨간 망토 제거 / v3: 앞뒤 일치 — 머리를 왼쪽 어깨 앞으로 넘겨 등이 세 뷰 모두에서 보이게 / 2차 메모: 확정 / 무기 v1: 집광 렌즈 정밀총 / 무기 v2: 총구·조준경 렌즈가 정면을 보던 형태 오류 고침(총신 방향으로 정리) / 무기 v3: 새 디자인으로 다시 뽑음 / 무기 v4: 직교 측면, 곧은 총신",
 "memoRound": 2
 },
 {
@@ -2096,7 +2096,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U057.jpg",
 "weaponImg": "img/weapon/U057.jpg",
-"note": "1차 수정(v2): 정면 바라보게 / 2차 메모: 확정 / 무기 v1: 기타형 공명 악기 / 무기 v2: 기타 → 키보드 건반(키타)",
+"note": "1차 수정(v2): 정면 바라보게 / 2차 메모: 확정 / 무기 v1: 기타형 공명 악기 / 무기 v2: 기타 → 키보드 건반(키타) / 무기 v3: 건반 크기 균일한 직교 키타",
 "memoRound": 2
 },
 {
@@ -2493,7 +2493,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U069.jpg",
 "weaponImg": "img/weapon/U069.jpg",
-"note": "1차 메모: 확정 / 2차 메모: 확정 취소 → 정면 바라보게 수정(v2) / 무기 v1: 태양 하프 (위쪽 렌즈 고리가 살짝 매달려 있음) / 무기 v2: 하프 틀 얇게",
+"note": "1차 메모: 확정 / 2차 메모: 확정 취소 → 정면 바라보게 수정(v2) / 무기 v1: 태양 하프 (위쪽 렌즈 고리가 살짝 매달려 있음) / 무기 v2: 하프 틀 얇게 / 무기 v3: 두께 고른 하프 틀",
 "memoRound": 2
 },
 {
@@ -2622,7 +2622,7 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U073.jpg",
