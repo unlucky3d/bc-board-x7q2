@@ -328,7 +328,7 @@ function detail(c){
   const wb=$("#cfw"); if(wb)wb.addEventListener("click",()=>{const on=sw(c)!=="done";
     if(DB){wb.disabled=true;DB.collection("confirmw").doc(c.id).set({weapon:on,at:new Date().toISOString()}).then(()=>toast(on?"무기를 확정했습니다":"무기 확정을 취소했습니다")).catch(()=>{toast("저장 실패");wb.disabled=false;});}
     else{lcfw[c.id]=on;try{localStorage.setItem(WK,JSON.stringify(lcfw))}catch(e){}refresh();toast(on?"무기를 확정했습니다 (이 브라우저에만 저장)":"무기 확정을 취소했습니다");}});
-  $("#modal").hidden=false; $("#x").focus();
+  const wasHidden=$("#modal").hidden; $("#modal").hidden=false; if(wasHidden)$("#x").focus();
   $("#x").onclick=()=>{history.length>1&&location.hash===("#"+c.id)?(location.hash="list"):(location.hash="list")};
 }
 $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")location.hash="list";});
@@ -356,7 +356,10 @@ $("#copyMemos").addEventListener("click",()=>{
   try{navigator.clipboard.writeText(txt).then(done,fallback);}catch(e){fallback();}
 });
 function refresh(){stats();render();const h=location.hash.slice(1);const c=C.find(x=>x.id===h);
-  if(c&&!$("#modal").hidden){const ta=$("#memo");const focused=ta&&document.activeElement===ta;const keep=ta?ta.value:"";detail(c);if(focused){const t=$("#memo");t.value=keep;t.focus();}}}
+  if(c&&!$("#modal").hidden){const ta=$("#memo");
+    // 메모를 쓰는 중이면 상세 창을 다시 그리지 않음(커서가 맨 앞으로 튀는 문제 방지)
+    if(ta&&document.activeElement===ta)return;
+    const m=$("#modal"),st=m.scrollTop;detail(c);m.scrollTop=st;}}
 stats(); render(); regions(); route();
 (async()=>{if(!window.claude||!claude.use)return;const db=await claude.use("db");if(!db)return;DB=db;
   // 이 브라우저에 남은 메모·확정은 공유 저장소로 옮김
