@@ -188,8 +188,9 @@ const saveMemos=()=>{try{localStorage.setItem(MK,JSON.stringify(memos))}catch(e)
 // 반영 완료된 메모 자동 비우기: data.js 의 memoRound 가 이 브라우저가 본 회차보다 크면 그 캐릭터의 내 메모를 비움
 (()=>{const RK="ac_board_memo_round_v1";let seen={};try{seen=JSON.parse(localStorage.getItem(RK)||"{}")||{}}catch(e){}
   let lc={};try{lc=JSON.parse(localStorage.getItem("ac_board_confirm_v1")||"{}")||{}}catch(e){}
-  let n=0;C.forEach(c=>{if(c.memoRound&&c.memoRound>(seen[c.id]||0)){if(memos[c.id]){delete memos[c.id];n++;}delete lc[c.id];seen[c.id]=c.memoRound;}});
-  try{localStorage.setItem("ac_board_confirm_v1",JSON.stringify(lc))}catch(e){}
+  let lw={};try{lw=JSON.parse(localStorage.getItem("ac_board_confirmw_v1")||"{}")||{}}catch(e){}
+  let n=0;C.forEach(c=>{if(c.memoRound&&c.memoRound>(seen[c.id]||0)){if(memos[c.id]){delete memos[c.id];n++;}delete lc[c.id];delete lw[c.id];seen[c.id]=c.memoRound;}});
+  try{localStorage.setItem("ac_board_confirm_v1",JSON.stringify(lc));localStorage.setItem("ac_board_confirmw_v1",JSON.stringify(lw))}catch(e){}
   saveMemos();try{localStorage.setItem(RK,JSON.stringify(seen))}catch(e){}
   if(n)setTimeout(()=>toast(`반영 완료된 메모 ${n}개를 비웠습니다 (내용은 공용 비고에 있음)`),300);})();
 // 확정·메모 공유 저장: Claude 페이지에서는 db(모두에게 공유, Claude 가 읽음), 다른 곳에서는 이 브라우저에만
@@ -197,6 +198,9 @@ let DB=null; const cf={}; const dm={};
 const CK="ac_board_confirm_v1"; let lcf={}; try{lcf=JSON.parse(localStorage.getItem(CK)||"{}")||{}}catch(e){}
 const cfState=id=>DB?cf[id]:lcf[id];
 const sc=c=>{const v=cfState(c.id);return v===true?"done":v===false&&c.st.char==="done"?"doing":c.st.char;};
+const cfw={}; const WK="ac_board_confirmw_v1"; let lcfw={}; try{lcfw=JSON.parse(localStorage.getItem(WK)||"{}")||{}}catch(e){}
+const cfwState=id=>DB?cfw[id]:lcfw[id];
+const sw=c=>{if(c.worn)return c.st.weapon;const v=cfwState(c.id);return v===true?"done":v===false&&c.st.weapon==="done"?"doing":c.st.weapon;};
 const memoOf=id=>DB?((dm[id]&&dm[id].text)||""):(memos[id]||"");
 const hasMemo=c=>!!(c.note||memoOf(c.id).trim());
 function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2200);}
@@ -205,7 +209,7 @@ $("#upd").textContent="갱신 "+D.updated;
 // 요약
 function stats(){
   const n=C.length, w=C.filter(c=>!c.worn);
-  const cd=C.filter(c=>sc(c)==="done").length, wd=w.filter(c=>c.st.weapon==="done").length, md=C.filter(c=>c.st.model==="done").length;
+  const cd=C.filter(c=>sc(c)==="done").length, wd=w.filter(c=>sw(c)==="done").length, md=C.filter(c=>c.st.model==="done").length;
   const fc=C.filter(c=>c.formCheck).length;
   const tile=(k,v,t,cls="")=>`<div class="stat ${cls}"><div class="k">${k}</div><div class="v">${v}<small> / ${t}</small></div>${t?`<div class="bar"><i style="width:${t?v/t*100:0}%"></i></div>`:""}</div>`;
   $("#stats").innerHTML=tile("캐릭터 컨셉샷",cd,n)+tile("무기 컨셉샷",wd,w.length)+tile("3D 모델",md,n)+
@@ -227,7 +231,7 @@ function pass(c){
   const s=$("#stf").value;
   if(s==="c-todo"&&sc(c)==="done")return false;
   if(s==="c-done"&&sc(c)!=="done")return false;
-  if(s==="w-todo"&&(c.worn||c.st.weapon==="done"))return false;
+  if(s==="w-todo"&&(c.worn||sw(c)==="done"))return false;
   if(s==="m-done"&&c.st.model!=="done")return false;
   if(s==="form"&&!c.formCheck)return false;
   if(s==="worn"&&!c.worn)return false;
@@ -244,7 +248,7 @@ function card(c){
       <div class="wpn">${c.worn?"🧤 ":""}<b>${esc(c.weapon)}</b> <span class="meta">(${esc(c.wform)})</span></div>
       <div class="sts">
         <span class="st ${sc(c)}">컨셉 ${ST[sc(c)]}</span>
-        <span class="st ${c.st.weapon}">무기 ${ST[c.st.weapon]}</span>
+        <span class="st ${sw(c)}">무기 ${ST[sw(c)]}</span>
         <span class="st ${c.st.model}">3D ${ST[c.st.model]}</span>
       </div>
       ${c.formCheck?`<div class="flag">형태 확인 필요</div>`:""}
@@ -282,7 +286,7 @@ function detail(c){
   $("#sheet").innerHTML=`
    <div class="shead"><div><div class="cid">${c.id} · ${esc(c.group)}</div><h2 id="m-title">${esc(c.name)}</h2><div class="meta">${esc(f.name)} · ${esc(c.job)} · ${esc(c.pos)} 사거리 ${c.range} · ${c.cost}코스트${c.unique?" · 고유 "+esc(c.unique):""}</div></div><button class="close" type="button" id="x">닫기</button></div>
    ${c.formCheck?`<div class="note">형태 확인 필요 — ${esc(c.formCheck)}</div>`:""}
-   <div class="imgs" style="margin-top:${c.formCheck?12:0}px">${fig("img/"+c.id+".jpg","원본 일러스트 ("+esc(c.illusShot)+")","")}${fig(c.conceptImg,"캐릭터 컨셉샷",sc(c),c.conceptImg?`<button class="cfm" type="button" id="cfm" aria-pressed="${sc(c)==="done"}">${sc(c)==="done"?"✓ 확정됨 (누르면 취소)":"컨셉샷 확정"}</button>`:"")}${c.worn?`<figure><div class="box"><div class="ph">무기는 캐릭터에 포함<br>(${esc(c.weapon)})</div></div><figcaption><span>무기 컨셉샷</span><span class="st none">${ST.none}</span></figcaption></figure>`:fig(c.weaponImg,"무기 컨셉샷",c.st.weapon)}</div>
+   <div class="imgs" style="margin-top:${c.formCheck?12:0}px">${fig("img/"+c.id+".jpg","원본 일러스트 ("+esc(c.illusShot)+")","")}${fig(c.conceptImg,"캐릭터 컨셉샷",sc(c),c.conceptImg?`<button class="cfm" type="button" id="cfm" aria-pressed="${sc(c)==="done"}">${sc(c)==="done"?"✓ 확정됨 (누르면 취소)":"컨셉샷 확정"}</button>`:"")}${c.worn?`<figure><div class="box"><div class="ph">무기는 캐릭터에 포함<br>(${esc(c.weapon)})</div></div><figcaption><span>무기 컨셉샷</span><span class="st none">${ST.none}</span></figcaption></figure>`:fig(c.weaponImg,"무기 컨셉샷",sw(c),c.weaponImg?`<button class="cfm" type="button" id="cfw" aria-pressed="${sw(c)==="done"}">${sw(c)==="done"?"✓ 무기 확정됨 (누르면 취소)":"무기 컨셉샷 확정"}</button>`:"")}</div>
    <div class="sbody">
     <div class="sec"><h4>캐릭터</h4><dl class="kv">
       <dt>컨셉</dt><dd>${esc(c.concept)}</dd>
@@ -321,6 +325,9 @@ function detail(c){
   const cb=$("#cfm"); if(cb)cb.addEventListener("click",()=>{const on=sc(c)!=="done";
     if(DB){cb.disabled=true;DB.collection("confirm").doc(c.id).set({concept:on,at:new Date().toISOString()}).then(()=>toast(on?"확정했습니다":"확정을 취소했습니다")).catch(()=>{toast("저장 실패");cb.disabled=false;});}
     else{lcf[c.id]=on;try{localStorage.setItem(CK,JSON.stringify(lcf))}catch(e){}refresh();toast(on?"확정했습니다 (이 브라우저에만 저장)":"확정을 취소했습니다");}});
+  const wb=$("#cfw"); if(wb)wb.addEventListener("click",()=>{const on=sw(c)!=="done";
+    if(DB){wb.disabled=true;DB.collection("confirmw").doc(c.id).set({weapon:on,at:new Date().toISOString()}).then(()=>toast(on?"무기를 확정했습니다":"무기 확정을 취소했습니다")).catch(()=>{toast("저장 실패");wb.disabled=false;});}
+    else{lcfw[c.id]=on;try{localStorage.setItem(WK,JSON.stringify(lcfw))}catch(e){}refresh();toast(on?"무기를 확정했습니다 (이 브라우저에만 저장)":"무기 확정을 취소했습니다");}});
   $("#modal").hidden=false; $("#x").focus();
   $("#x").onclick=()=>{history.length>1&&location.hash===("#"+c.id)?(location.hash="list"):(location.hash="list")};
 }
@@ -341,9 +348,9 @@ function route(){
   if(c)detail(c); else {if(!$("#modal").hidden){$("#modal").hidden=true;render();}}
 }
 $("#copyMemos").addEventListener("click",()=>{
-  const ids=C.map(c=>c.id).filter(k=>memoOf(k).trim()||typeof cfState(k)==="boolean").sort();
+  const ids=C.map(c=>c.id).filter(k=>memoOf(k).trim()||typeof cfState(k)==="boolean"||typeof cfwState(k)==="boolean").sort();
   if(!ids.length){toast("저장된 메모가 없습니다");return;}
-  const txt="[경계도시 제작판 메모]\n"+ids.map(k=>{const c=C.find(x=>x.id===k);const v=cfState(k);return `${k} ${c?c.name:""}: ${v===true?"[확정] ":v===false?"[확정 취소] ":""}${memoOf(k).trim()}`}).join("\n");
+  const txt="[경계도시 제작판 메모]\n"+ids.map(k=>{const c=C.find(x=>x.id===k);const v=cfState(k);const w=cfwState(k);return `${k} ${c?c.name:""}: ${v===true?"[확정] ":v===false?"[확정 취소] ":""}${w===true?"[무기 확정] ":w===false?"[무기 확정 취소] ":""}${memoOf(k).trim()}`}).join("\n");
   const done=()=>toast(`메모 ${ids.length}개를 복사했습니다`);
   const fallback=()=>{const t=document.createElement("textarea");t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand("copy");done();}catch(e){toast("복사 실패 — 직접 선택해 주세요")}t.remove();};
   try{navigator.clipboard.writeText(txt).then(done,fallback);}catch(e){fallback();}
@@ -354,6 +361,7 @@ stats(); render(); regions(); route();
 (async()=>{if(!window.claude||!claude.use)return;const db=await claude.use("db");if(!db)return;DB=db;
   // 이 브라우저에 남은 메모·확정은 공유 저장소로 옮김
   let first=true;
+  db.collection("confirmw").onSnapshot(sn=>{for(const k in cfw)delete cfw[k];sn.docs.forEach(d=>{cfw[d.id]=!!(d.data()||{}).weapon;});refresh();},()=>{});
   db.collection("confirm").onSnapshot(sn=>{for(const k in cf)delete cf[k];sn.docs.forEach(d=>{cf[d.id]=!!(d.data()||{}).concept;});refresh();},()=>{});
   db.collection("memos").onSnapshot(sn=>{for(const k in dm)delete dm[k];sn.docs.forEach(d=>{dm[d.id]=d.data()||{};});
     if(first){first=false;Object.keys(memos).forEach(k=>{if(memos[k].trim()&&!dm[k])db.collection("memos").doc(k).set({text:memos[k],at:new Date().toISOString()}).catch(()=>{});});memos={};saveMemos();}

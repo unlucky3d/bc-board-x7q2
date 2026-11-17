@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-17 13:55",
+"updated": "2026-11-17 14:25",
 "factions": [
 {
 "id": "F01",
@@ -1230,12 +1230,12 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U031.jpg",
-"weaponImg": "",
-"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정",
+"weaponImg": "img/weapon/U031.jpg",
+"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현",
 "memoRound": 2
 },
 {
@@ -1561,12 +1561,12 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U041.jpg",
-"weaponImg": "",
-"note": "1차 수정(v2): 머릿결 좋게, 정면 바라보게 / 2차 메모: 확정",
+"weaponImg": "img/weapon/U041.jpg",
+"note": "1차 수정(v2): 머릿결 좋게, 정면 바라보게 / 2차 메모: 확정 / 무기 v1: 원형 방패 + 짧은 철퇴",
 "memoRound": 2
 },
 {
@@ -1661,12 +1661,12 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U044.jpg",
-"weaponImg": "",
-"note": "1차 수정(v2): 등 파인 드레스, 가슴 크게, 빨간 망토 제거 / v3: 앞뒤 일치 — 머리를 왼쪽 어깨 앞으로 넘겨 등이 세 뷰 모두에서 보이게 / 2차 메모: 확정",
+"weaponImg": "img/weapon/U044.jpg",
+"note": "1차 수정(v2): 등 파인 드레스, 가슴 크게, 빨간 망토 제거 / v3: 앞뒤 일치 — 머리를 왼쪽 어깨 앞으로 넘겨 등이 세 뷰 모두에서 보이게 / 2차 메모: 확정 / 무기 v1: 집광 렌즈 정밀총",
 "memoRound": 2
 },
 {
@@ -2091,12 +2091,12 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U057.jpg",
-"weaponImg": "",
-"note": "1차 수정(v2): 정면 바라보게 / 2차 메모: 확정",
+"weaponImg": "img/weapon/U057.jpg",
+"note": "1차 수정(v2): 정면 바라보게 / 2차 메모: 확정 / 무기 v1: 기타형 공명 악기",
 "memoRound": 2
 },
 {
@@ -2328,7 +2328,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U064.jpg",
 "weaponImg": "img/weapon/U064.jpg",
-"note": ""
+"note": "무기 v2: 마체테 사선 (새 대화에서 재시도 성공)"
 },
 {
 "id": "U065",
@@ -2488,12 +2488,12 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "doing",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U069.jpg",
-"weaponImg": "",
-"note": "1차 메모: 확정 / 2차 메모: 확정 취소 → 정면 바라보게 수정(v2)",
+"weaponImg": "img/weapon/U069.jpg",
+"note": "1차 메모: 확정 / 2차 메모: 확정 취소 → 정면 바라보게 수정(v2) / 무기 v1: 태양 하프 (위쪽 렌즈 고리가 살짝 매달려 있음)",
 "memoRound": 2
 },
 {
@@ -2622,12 +2622,12 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U073.jpg",
-"weaponImg": "",
-"note": "1차 수정(v2): 살짝 통통, 푸근한 아저씨 인상 / 2차 메모: 얼굴 수정 → 사용자 제공 얼굴 사진 참고(v3) / 3차: 확정(제작판 버튼)",
+"weaponImg": "img/weapon/U073.jpg",
+"note": "1차 수정(v2): 살짝 통통, 푸근한 아저씨 인상 / 2차 메모: 얼굴 수정 → 사용자 제공 얼굴 사진 참고(v3) / 3차: 확정(제작판 버튼) / 무기 v1: 사슬 없는 막대형 치유 향로",
 "memoRound": 2
 },
 {
