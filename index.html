@@ -196,7 +196,7 @@ const saveMemos=()=>{try{localStorage.setItem(MK,JSON.stringify(memos))}catch(e)
 let DB=null; const cf={}; const dm={};
 const CK="ac_board_confirm_v1"; let lcf={}; try{lcf=JSON.parse(localStorage.getItem(CK)||"{}")||{}}catch(e){}
 const cfState=id=>DB?cf[id]:lcf[id];
-const sc=c=>{const v=cfState(c.id);return v===true?"done":v===false&&sc(c)==="done"?"doing":c.st.char;};
+const sc=c=>{const v=cfState(c.id);return v===true?"done":v===false&&c.st.char==="done"?"doing":c.st.char;};
 const memoOf=id=>DB?((dm[id]&&dm[id].text)||""):(memos[id]||"");
 const hasMemo=c=>!!(c.note||memoOf(c.id).trim());
 function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2200);}

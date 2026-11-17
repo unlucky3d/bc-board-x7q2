@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-16 23:50",
+"updated": "2026-11-17 13:55",
 "factions": [
 {
 "id": "F01",
@@ -2587,13 +2587,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
 "conceptImg": "img/concept/U072.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 얼굴 비율 키움, 뒷모습 안대끈 보이게 / 2차 메모: 얼굴이 커져 비율이 나빠짐 → 얼굴 살짝 줄임(v3)",
+"note": "1차 수정(v2): 얼굴 비율 키움, 뒷모습 안대끈 보이게 / 2차 메모: 얼굴이 커져 비율이 나빠짐 → 얼굴 살짝 줄임(v3) / 3차: 확정(제작판 버튼)",
 "memoRound": 2
 },
 {
@@ -2621,13 +2621,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
 "conceptImg": "img/concept/U073.jpg",
 "weaponImg": "",
-"note": "1차 수정(v2): 살짝 통통, 푸근한 아저씨 인상 / 2차 메모: 얼굴 수정 → 사용자 제공 얼굴 사진 참고(v3)",
+"note": "1차 수정(v2): 살짝 통통, 푸근한 아저씨 인상 / 2차 메모: 얼굴 수정 → 사용자 제공 얼굴 사진 참고(v3) / 3차: 확정(제작판 버튼)",
 "memoRound": 2
 },
 {
