@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-18 20:45",
+"updated": "2026-11-18 21:45",
 "factions": [
 {
 "id": "F01",
@@ -469,13 +469,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U008.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 빨간 정장 흰머리 귀족·거만 / 컨셉 v1: 빨간 3피스 정장 + 왼쪽 어깨 남보라 반망토"
 },
 {
 "id": "U009",
@@ -964,13 +964,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U023.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 비챤과 같은 아이돌 설정·남색 머리·금색 눈 / 컨셉 v1: 단발 남색 머리, 검무가 복장(무대의상 대신), 약 7등신"
 },
 {
 "id": "U024",
@@ -997,13 +997,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U024.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 아이돌·주홍 머리·주홍 눈 / 컨셉 v1: 일러스트 자홍 머리 → 주홍, 오른쪽 어깨 앞 사이드 포니테일"
 },
 {
 "id": "U025",
@@ -1235,7 +1235,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U031.jpg",
 "weaponImg": "img/weapon/U031.jpg",
-"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현 / 무기 수정 요청(중화기 형태)은 ChatGPT가 2번 거절 — v1 유지, 다른 방법 필요 / 무기 v2: 어깨에 메는 단일 대포형(중화기) / 무기 v3: 육각 통 3개 다연장으로 복원, 원근 없는 사선 / 무기 v4(퀄업): 육각 3연장, 세력 디자인 통일 / 무기 v5: 눕혀진 원통 3연장 로켓, 포구까지 같은 시점 / 무기 v6: 화면 사선 배치 + 3/4 회전(포구 타원 일치) / 무기 v7: 총처럼 보이던 형태 폐기 → 굵은 원통 3개를 가로 한 층으로 눕힌 발사 포드(아래 어깨 받침, 위 손잡이·조준기, 권총식 손잡이) / 무기 v9: 위 손잡이 제거, 뒤 개머리판(쿠션) 추가, 메인 3/4 + 뒤쪽 3/4 + 옆모습 3각도 / 무기 v11: 중화기 구조로 재설계(방아쇠 뒤 손잡이+앞 손잡이, 가운데 밑 어깨 받침, 왼쪽 눈높이 조준경, 뒤 배출구, 방염판) + 어깨에 멘 사용 모습",
+"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현 / 무기 수정 요청(중화기 형태)은 ChatGPT가 2번 거절 — v1 유지, 다른 방법 필요 / 무기 v2: 어깨에 메는 단일 대포형(중화기) / 무기 v3: 육각 통 3개 다연장으로 복원, 원근 없는 사선 / 무기 v4(퀄업): 육각 3연장, 세력 디자인 통일 / 무기 v5: 눕혀진 원통 3연장 로켓, 포구까지 같은 시점 / 무기 v6: 화면 사선 배치 + 3/4 회전(포구 타원 일치) / 무기 v7: 총처럼 보이던 형태 폐기 → 굵은 원통 3개를 가로 한 층으로 눕힌 발사 포드(아래 어깨 받침, 위 손잡이·조준기, 권총식 손잡이) / 무기 v9: 위 손잡이 제거, 뒤 개머리판(쿠션) 추가, 메인 3/4 + 뒤쪽 3/4 + 옆모습 3각도 / 무기 v11: 중화기 구조로 재설계(방아쇠 뒤 손잡이+앞 손잡이, 가운데 밑 어깨 받침, 왼쪽 눈높이 조준경, 뒤 배출구, 방염판) + 어깨에 멘 사용 모습 / 무기 v11: 사용 동작에서 형태 역산 — 긴 3연장 몸통을 어깨 위에, 뒤 나팔 배기구, 어깨 패드(가운데 아래), 뒤 손잡이+방아쇠, 앞 손잡이, 왼쪽 조준경 + 진희가 메고 조준하는 사용 예시",
 "memoRound": 2
 },
 {
@@ -1362,13 +1362,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U035.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 헤어 기어가 특징·백치미 / 컨셉 v1: 둥근 은색 헤어 기어, 멍한 표정, 약 6.5등신"
 },
 {
 "id": "U036",
@@ -1461,13 +1461,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U038.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 터키 아이스크림 상인·서커스 단원·빨간 모자 / 컨셉 v1: 빨간 페즈, 줄무늬 쇼맨 조끼, 붉은 띠, 반투명 앞치마"
 },
 {
 "id": "U039",
@@ -2024,13 +2024,13 @@ window.AC_DATA={
 "formCheck": "날개·후드 실루엣 형태 확인 필요",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U055.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 어둠 섞인 천사·나른하고 귀찮은 성격 / 컨셉 v1: 끝이 남흑색으로 짙어지는 날개, 검은 은 헤일로, 반쯤 감긴 눈"
 },
 {
 "id": "U056",
@@ -2057,13 +2057,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U056.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정: 강인·수련·검빨 투톤 헤어 / 컨셉 v1: 위 검정 아래 빨강 투톤 단발, 수련복·손목 붕대, 왼쪽 어깨 반망토"
 },
 {
 "id": "U057",
