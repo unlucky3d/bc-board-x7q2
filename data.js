@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-17 19:45",
+"updated": "2026-11-18 14:50",
 "factions": [
 {
 "id": "F01",
@@ -1069,7 +1069,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U026.jpg",
 "weaponImg": "img/weapon/U026.jpg",
-"note": "1차 메모: 확정 / 무기 v3: 손잡이 흰색·조금 길게 / 무기 v4: 원근 왜곡 없앤 직교 측면 / 무기 v5: 손잡이 길게(전체의 약 1/3), 원근 없는 사선 / 무기 v6(퀄업): 확정작 레시피 복귀, 낮은 사선, 긴 흰 손잡이",
+"note": "1차 메모: 확정 / 무기 v3: 손잡이 흰색·조금 길게 / 무기 v4: 원근 왜곡 없앤 직교 측면 / 무기 v5: 손잡이 길게(전체의 약 1/3), 원근 없는 사선 / 무기 v6(퀄업): 확정작 레시피 복귀, 낮은 사선, 긴 흰 손잡이 / 무기 v7: 시점 통일(날밑이 정면 원으로 그려져 비틀려 보이던 문제 → 옆에서 본 납작한 타원), 한 축 정렬",
 "memoRound": 1
 },
 {
@@ -1235,7 +1235,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U031.jpg",
 "weaponImg": "img/weapon/U031.jpg",
-"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현 / 무기 수정 요청(중화기 형태)은 ChatGPT가 2번 거절 — v1 유지, 다른 방법 필요 / 무기 v2: 어깨에 메는 단일 대포형(중화기) / 무기 v3: 육각 통 3개 다연장으로 복원, 원근 없는 사선 / 무기 v4(퀄업): 육각 3연장, 세력 디자인 통일",
+"note": "1차 수정(v2): 삐쩍 마른 체형 + 사이즈 안 맞아 헐렁이는 옷 / 2차 메모: 확정 / 무기 v1: 태양 불꽃 축포(6연발 렌즈 통) — 로켓 표현은 GPT가 거절해 축포로 표현 / 무기 수정 요청(중화기 형태)은 ChatGPT가 2번 거절 — v1 유지, 다른 방법 필요 / 무기 v2: 어깨에 메는 단일 대포형(중화기) / 무기 v3: 육각 통 3개 다연장으로 복원, 원근 없는 사선 / 무기 v4(퀄업): 육각 3연장, 세력 디자인 통일 / 무기 v5: 눕혀진 원통 3연장 로켓, 포구까지 같은 시점",
 "memoRound": 2
 },
 {
@@ -1661,7 +1661,7 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U044.jpg",
@@ -2091,7 +2091,7 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U057.jpg",
@@ -2488,7 +2488,7 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "doing",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U069.jpg",
