@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 01:35",
+"updated": "2026-11-20 02:20",
 "factions": [
 {
 "id": "F01",
@@ -338,13 +338,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U004.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 검은 묶은 머리·검은 마스크, 남색 두건 스카프, 찢긴 겹 튜닉·두른 바지, 허리 방울 장식"
 },
 {
 "id": "U005",
@@ -371,13 +371,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U005.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 대머리·옆 흰머리·흰 콧수염, 긴 보라 코트·크림 라펠, 가슴 황동 톱니 표식, 조끼·붉은 넥타이"
 },
 {
 "id": "U006",
@@ -866,13 +866,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U020.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 근육질 검은 머리, 빨간 셔츠·가슴 빛나는 원형 표식, 크림색 후드 망토, 남색 줄무늬 앞치마, 등 흰 탱크(고유 표식)"
 },
 {
 "id": "U021",
@@ -899,13 +899,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U021.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 흰 단발·보라 눈·크리스털 귀걸이, 흰 단열 후드 망토(남색·금 테), 곧은 흰·남색 겹옷, 검은 갑옷 장갑"
 },
 {
 "id": "U022",
@@ -1031,13 +1031,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U025.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 은보라 긴 머리·파란 십자 핀·웃는 얼굴, 보라 후드 짧은 망토·긴 뒷자락, 흰 어깨 트인 블라우스, 겹 치마·허벅지 끈·검은 스타킹, 허리 기억 등불"
 },
 {
 "id": "U026",
@@ -1197,13 +1197,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U030.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 갈색 머리·둥근 선글라스·웃는 얼굴, 남색 어깨망토 달린 갈색 롱코트, 보라 스카프, 가죽 벨트·부츠"
 },
 {
 "id": "U031",
@@ -1829,13 +1829,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U049.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 검은 단발·꽃 머리핀·양 갈래 땋은 머리, 민소매 남색 상의, 허리 부품 주머니 벨트, 검은 타이츠·갈색 부츠·장갑. △ 가슴 쪽 파인 구멍이 생김 — 다음 수정 때 막기"
 },
 {
 "id": "U050",
@@ -1862,13 +1862,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U050.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 검은 콧수염·흰 천 두건, 흰·회색 겹 수도복·남색 금 테, 가슴 금 눈꽃 바퀴 표식, 등 냉각관 팩(고유 표식)"
 },
 {
 "id": "U051",
@@ -2226,13 +2226,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U061.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 삭발·은색 선 머리띠, 짧은 수염, 흰·회색 긴 검객 코트·닫힌 칼라, 은 눈꽃 표식, 서리 금속 어깨 갑옷"
 },
 {
 "id": "U062",
@@ -2259,13 +2259,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U062.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 흰 머리·둥근 쥐 귀, 검은 짧은 망토, 흰 퍼프 소매, 검은 주름 치마·허벅지 끈, 흰 양말·갈색 부츠"
 },
 {
 "id": "U063",
@@ -2426,13 +2426,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U067.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 아주 긴 흰 머리·긴 흰 수염, 크림·잿빛 넓은 소매 겹 도포, 짧은 보라 허리띠, 허리 작은 청동 방울"
 },
 {
 "id": "U068",
@@ -2891,13 +2891,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U081.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 금발 단발·빨간 베레모, 흰 털 칼라 단열 코트·빨간 안감, 등 가방, 검은 반바지·사이하이 스타킹·부츠"
 },
 {
 "id": "U082",
