@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-19 19:30",
+"updated": "2026-11-19 20:10",
 "factions": [
 {
 "id": "F01",
@@ -259,8 +259,8 @@ window.AC_DATA={
 "skill": "태엽 순찰병",
 "sig": "바닥 육각 문양에서 철제 태엽병이 조립되며 등장",
 "outfit": "리벳 조끼와 사각 어깨, 등에 큰 태엽 키",
-"weapon": "펀치카드 소환 조종기",
-"wform": "한손",
+"weapon": "태엽 순찰병 (소환물)",
+"wform": "소환물",
 "worn": false,
 "detail": "단순 — 세력 색 + 핵심 포인트 1개",
 "rig": "A 표준",
@@ -271,13 +271,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U002.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정(11/19 사용자): 큰 앞니·안경이 특징, 무기 = 태엽 순찰병 / 컨셉 v1(11/19): 일러스트 얼굴(헝클어진 갈색 머리·둥근 안경·큰 앞니 웃음) 유지, 청록 리벳 조끼·사각 어깨판·작업 장갑, 등 가운데 큰 황동 태엽 키. 자가 점수 92/100"
 },
 {
 "id": "U003",
@@ -1627,13 +1627,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U043.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정(11/19 사용자): 도깨비 컨셉, 분홍 머리·노란 눈 / 컨셉 v1(11/19): 작은 뿔 둘·작은 송곳니, 분홍 단발, 노란(호박빛) 눈, 흰 털 후드 코트(후드 내림)에 청록·구리 리벳 장식, 여성스러운 체형. 자가 점수 91/100 (눈이 노랑보다 호박색 쪽이라 감점)"
 },
 {
 "id": "U044",
@@ -2124,13 +2124,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "none",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U058.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정(11/19 사용자): 노란 머리·파란 눈, 마른 체형, 기술자 느낌 / 컨셉 v1(11/19): 뾰족한 금발·파란 눈, 마르고 긴 체형, 파란 니트(소매 걷음)·리벳 작업 앞치마·허리 의료 가방, 손끝이 청록으로 빛나는 필라멘트 수리 장갑(캐릭터 포함). 자가 점수 92/100"
 },
 {
 "id": "U059",
@@ -2754,13 +2754,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U077.jpg",
 "weaponImg": "",
-"note": ""
+"note": "설정(11/19 사용자): 톰 크루즈 닮은 아저씨 컨셉, 검은 머리에 흰 새치, 정장 느낌 / 컨셉 v1(11/19): 실존 인물 이름은 프롬프트에 넣지 않고 '잘생긴 중년 액션 배우' 분위기를 글로(각진 턱·자신감 있는 반웃음), 올백 검은 머리에 관자놀이 흰 새치, 조끼·흰 셔츠·넥타이 정장 + 청록 리벳 어깨판 긴 코트·공구 벨트. 자가 점수 92/100"
 },
 {
 "id": "U078",
