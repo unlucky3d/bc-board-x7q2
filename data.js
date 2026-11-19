@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-19 20:35",
+"updated": "2026-11-19 20:50",
 "factions": [
 {
 "id": "F01",
@@ -2362,8 +2362,9 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U065.jpg",
 "weaponImg": "",
-"note": "컨셉: 10/27 채택된 4방향 턴어라운드(Tripo 입력 v3 — 앞·왼쪽·오른쪽·뒤, 원본 C:\\ClaudeWork\\AutoChess\\40_Preview\\turnaround_test\\tripo_input_ngj_v3) 적용(11/19 사용자 요청). 모델은 이 컨셉으로 완료 / 3D 모델(10/29 전달본 v1): Tripo 모델·리깅 → Blender 수정, 정점 6,763·삼각형 12,049·뼈 65개·텍스처 2048. 제작판 '3D 모델' 칸 = 전달본 GLB를 정면·3/4·옆·뒤로 찍은 것(11/19)",
-"modelImg": "img/model/U065.jpg"
+"note": "컨셉: 10/27 채택된 4방향 턴어라운드(Tripo 입력 v3 — 앞·왼쪽·오른쪽·뒤, 원본 C:\\ClaudeWork\\AutoChess\\40_Preview\\turnaround_test\\tripo_input_ngj_v3) 적용(11/19 사용자 요청). 모델은 이 컨셉으로 완료 / 3D 모델(10/29 전달본 v1): Tripo 모델·리깅 → Blender 수정, 정점 6,763·삼각형 12,049·뼈 65개·텍스처 2048. 제작판 '3D 모델' 칸 = 전달본 GLB를 정면·3/4·옆·뒤로 찍은 것(11/19) / 리깅 영상(11/19 제작판 칸): 전달본 확인 영상 U065_ngj_preview.mp4(41초, 대기·걷기·뛰기·춤) 웹용으로 다시 인코딩",
+"modelImg": "img/model/U065.jpg",
+"rigVideo": "vid/U065.mp4"
 },
 {
 "id": "U066",

@@ -108,8 +108,12 @@ footer{margin-top:40px;color:var(--muted);font-size:12px}
 @media (max-width:760px){.notes{grid-template-columns:1fr}}
 .imgs{grid-template-columns:1fr 2fr 1fr}
 .imgs.has3d{grid-template-columns:1fr 2fr 1fr 2fr}
+.imgs.hasvid{grid-template-columns:1fr 2fr 1fr 1.2fr}
+.imgs.has3d.hasvid{grid-template-columns:1fr 2fr 1fr 2fr 1.2fr}
+.imgs video{width:100%;height:100%;object-fit:contain;display:block;background:#2b2b2e}
+.vid-mark{font-size:11px;color:var(--accent);font-weight:600}
 .thumbs.t3{grid-template-columns:1fr 1fr 1fr}
-@media (max-width:760px){.imgs.has3d{grid-template-columns:1fr 1fr}.imgs.has3d figure:last-child{grid-column:1/-1}}
+@media (max-width:760px){.imgs.has3d,.imgs.hasvid,.imgs.has3d.hasvid{grid-template-columns:1fr 1fr}.imgs.has3d:not(.hasvid) figure:last-child{grid-column:1/-1}.imgs.has3d.hasvid figure:nth-child(4),.imgs.has3d.hasvid figure:nth-child(5){grid-column:1/-1}}
 .imgs .box{aspect-ratio:auto;height:clamp(220px,42vh,440px)}
 .imgs img{cursor:zoom-in}
 .lb{position:fixed;inset:0;z-index:50;background:rgba(10,12,14,.92);display:flex;align-items:center;justify-content:center;padding-top:calc(16px + env(safe-area-inset-top,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));cursor:zoom-out}
@@ -248,6 +252,7 @@ function card(c){
       </div>
       ${c.formCheck?`<div class="flag">형태 확인 필요</div>`:""}
       ${hasMemo(c)?`<div class="memo-mark">✎ 비고 있음</div>`:""}
+      ${c.rigVideo?`<div class="vid-mark">▶ 리깅 영상 있음</div>`:""}
     </div></button>`;
 }
 function render(){
@@ -281,7 +286,7 @@ function detail(c){
   $("#sheet").innerHTML=`
    <div class="shead"><div><div class="cid">${c.id} · ${esc(c.group)}</div><h2 id="m-title">${esc(c.name)}</h2><div class="meta">${esc(f.name)} · ${esc(c.job)} · ${esc(c.pos)} 사거리 ${c.range} · ${c.cost}코스트${c.unique?" · 고유 "+esc(c.unique):""}</div></div><button class="close" type="button" id="x">닫기</button></div>
    ${c.formCheck?`<div class="note">형태 확인 필요 — ${esc(c.formCheck)}</div>`:""}
-   <div class="imgs${c.modelImg?" has3d":""}" style="margin-top:${c.formCheck?12:0}px">${fig("img/"+c.id+".jpg","원본 일러스트 ("+esc(c.illusShot)+")","")}${fig(c.conceptImg,"캐릭터 컨셉샷",sc(c),c.conceptImg?`<button class="cfm" type="button" id="cfm" aria-pressed="${sc(c)==="done"}">${sc(c)==="done"?"✓ 확정됨 (누르면 취소)":"컨셉샷 확정"}</button>`:"")}${c.worn?`<figure><div class="box"><div class="ph">무기는 캐릭터에 포함<br>(${esc(c.weapon)})</div></div><figcaption><span>무기 컨셉샷</span><span class="st none">${ST.none}</span></figcaption></figure>`:fig(c.weaponImg,"무기 컨셉샷",sw(c),c.weaponImg?`<button class="cfm" type="button" id="cfw" aria-pressed="${sw(c)==="done"}">${sw(c)==="done"?"✓ 무기 확정됨 (누르면 취소)":"무기 컨셉샷 확정"}</button>`:"")}${c.modelImg?fig(c.modelImg,"3D 모델 (정면·3/4·옆·뒤)",c.st.model):""}</div>
+   <div class="imgs${c.modelImg?" has3d":""}${c.rigVideo?" hasvid":""}" style="margin-top:${c.formCheck?12:0}px">${fig("img/"+c.id+".jpg","원본 일러스트 ("+esc(c.illusShot)+")","")}${fig(c.conceptImg,"캐릭터 컨셉샷",sc(c),c.conceptImg?`<button class="cfm" type="button" id="cfm" aria-pressed="${sc(c)==="done"}">${sc(c)==="done"?"✓ 확정됨 (누르면 취소)":"컨셉샷 확정"}</button>`:"")}${c.worn?`<figure><div class="box"><div class="ph">무기는 캐릭터에 포함<br>(${esc(c.weapon)})</div></div><figcaption><span>무기 컨셉샷</span><span class="st none">${ST.none}</span></figcaption></figure>`:fig(c.weaponImg,"무기 컨셉샷",sw(c),c.weaponImg?`<button class="cfm" type="button" id="cfw" aria-pressed="${sw(c)==="done"}">${sw(c)==="done"?"✓ 무기 확정됨 (누르면 취소)":"무기 컨셉샷 확정"}</button>`:"")}${c.modelImg?fig(c.modelImg,"3D 모델 (정면·3/4·옆·뒤)",c.st.model):""}${c.rigVideo?`<figure><div class="box"><video src="${esc(c.rigVideo)}" controls muted loop playsinline preload="metadata" aria-label="${esc(c.name)} 리깅 영상"></video></div><figcaption><span>리깅 영상 (모션 확인)</span></figcaption></figure>`:""}</div>
    <div class="sbody">
     <div class="sec"><h4>캐릭터</h4><dl class="kv">
       <dt>컨셉</dt><dd>${esc(c.concept)}</dd>
