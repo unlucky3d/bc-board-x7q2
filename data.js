@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 00:15",
+"updated": "2026-11-20 00:35",
 "factions": [
 {
 "id": "F01",
@@ -238,13 +238,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U001.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 원본 일러스트 + 아케인 화풍 레퍼런스로 정면·옆·뒤 생성. 안경·짧은 잠수 재킷(물결 끝단)·겨자색 조끼·청록 보석 걸쇠·손목 황동 고리"
 },
 {
 "id": "U002",
@@ -766,13 +766,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U017.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 곰 귀(진짜 귀)·은발 단발+파란 한 가닥·남색 잠수 작업복(주황 줄)·가슴 나침반 문양·벨트의 작은 투명 수압관·무릎 황동 이음"
 },
 {
 "id": "U018",
@@ -832,13 +832,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U019.jpg",
 "weaponImg": "",
-"note": "11/19 변경: 4 → 5코스트 · 체력·공격력·방어력 상승, 심연 압축구의 주대상·주변 피해 강화 (5코스트 고유 칭호는 아직 없음)"
+"note": "11/19 변경: 4 → 5코스트 · 체력·공격력·방어력 상승, 심연 압축구의 주대상·주변 피해 강화 (5코스트 고유 칭호는 아직 없음) / 컨셉샷 v1(11/20): 5코스트에 맞춰 세력에서 가장 우아한 실루엣 — 발목까지 오는 남색 의장복(흰 안판·금테·물결 끝단)·높은 깃·어깨 진주 구슬(오른쪽 큰 구슬이 고유 표식). 직업 표기는 아직 비전술사(마법사로 바꿀지 확인 필요)"
 },
 {
 "id": "U020",
@@ -2525,13 +2525,13 @@ window.AC_DATA={
 "formCheck": "2인 유닛인데 일러스트에 1명만 보임 — 구성(2체 / 본체+원격장치) 결정 필요",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U070.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 원본에 보이는 1명(대머리·붉은 미러 선글라스·이어피스·검은 전술 방수 코트·등 호스·손목 청록 이음)만 뽑음. 2인 유닛 구성(오퍼레이터 K 모습) 확인 필요"
 },
 {
 "id": "U071",
@@ -2558,13 +2558,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U071.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 삭발·붉은 머리띠(짧은 끈)·접힌 붉은 후드·회색 중잠수복(황동 밀폐 고리)·가슴 하네스와 짧은 호스·등 황동 공기통"
 },
 {
 "id": "U072",
@@ -2659,13 +2659,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U074.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 붉은 하이 포니테일·검은 민소매 치파오형 상의·짧은 붉은 허리띠·남색 방수 팔토시·황동 손목 고리. 늘어진 리본·술은 뺌"
 },
 {
 "id": "U075",
@@ -2923,13 +2923,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "none",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U082.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 사용자 참고 사진(11/20) 반영 — 어항 헬멧(물·초록 해초·붉은 산호·금붕어), 물속에 뜬 금발, 입 내민 표정, 파란 정장·불가사리 배지·청록 넥타이·조끼, 몸에 감긴 해초 띠. 착용형 무기(수압 파일벙커 건틀릿)는 원본처럼 왼팔. 얼굴은 사진 속 실제 얼굴이 아닌 게임 캐릭터 얼굴로"
 },
 {
 "id": "U083",
