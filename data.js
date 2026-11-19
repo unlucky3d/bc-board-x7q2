@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 00:35",
+"updated": "2026-11-20 00:55",
 "factions": [
 {
 "id": "F01",
@@ -667,13 +667,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U014.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 졸린 눈·무표정, 한쪽이 긴 비대칭 흰 절연 코트(보라 단·높은 깃·세라믹 단추), 가슴 황동 계기 렌즈, 무릎 황동 보조대"
 },
 {
 "id": "U015",
@@ -1265,13 +1265,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U032.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 외치는 표정, 자홍 안감·소매의 비대칭 검은 작업 재킷, 보라 셔츠, 무기 메는 하네스, 하트 핀, 등의 짧은 구리 코일"
 },
 {
 "id": "U033",
@@ -1960,13 +1960,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U053.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 오른눈 가린 긴 흑발, 금·적 톱니 문양 장교 모자(큰 상징), 흰 셔츠·검은 넥타이·멜빵 하네스, 왼팔 톱니 완장, 긴 절연 장갑. 하체(검은 펜슬 스커트·스타킹·굽 부츠)는 원본에 안 보여 새로 정함"
 },
 {
 "id": "U054",
@@ -1993,13 +1993,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U054.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 긴 웨이브 흑발·수염, 털 깃 갈색 작업 코트, 보라·낡은 황갈 천을 덧댄 비대칭 튜닉, 넓은 보라 허리띠, 팔 가죽 보호대. 늘어진 사슬은 뺌(민족 복식 상투 표현 금지)"
 },
 {
 "id": "U055",
@@ -2956,13 +2956,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U083.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 토끼 귀 달린 노란 모자·연두 귀마개, 흰 큰 리본, 노란 허리띠, 흰 바지·노란 무릎 보호대, 연두 하트 장식. △ 원본에 없는 짧은 상의(배 노출)로 나옴 — 다음 수정 때 흰 재킷으로"
 }
 ]
 };
