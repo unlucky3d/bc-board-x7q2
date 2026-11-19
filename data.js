@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 00:55",
+"updated": "2026-11-20 01:20",
 "factions": [
 {
 "id": "F01",
@@ -62,14 +62,15 @@ window.AC_DATA={
 "name": "뇌운공방",
 "place": "뇌정 가교공방",
 "lore": "폭풍을 포집해 전기로 바꾸는 공중 작업장과 기술자 구역.",
-"main": "#8A3FD0",
-"sub": "#3A3A44",
+"main": "#C2389E",
+"sub": "#2F2F38",
 "point": "#57C8FF",
 "sil": "비대칭 작업복, 코일의 작은 돌출",
 "mat": "절연가죽·코일·세라믹",
 "wgram": "축전 단검·코일 발사기",
 "fx": "짧고 꺾인 전류와 방전 점광",
-"avoid": "현대 군용 총기 복제 금지"
+"avoid": "현대 군용 총기 복제 금지",
+"colorNote": "11/20 메인 폭풍 보라 #8A3FD0 → 자홍 플라즈마 #C2389E, 서브 #3A3A44 → #2F2F38 (월영단 남보라와 구분). 컨셉샷은 다음 일괄 수정 때 반영"
 },
 {
 "id": "F06",
@@ -436,13 +437,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U007.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 옆 땋은 갈색 긴 머리·분홍 핀, 겹잎 모양 판을 겹친 긴 녹갈색 코트(잎맥 봉제), 가슴 큰 씨앗 브로치(큰 상징). 원본에 몸이 거의 안 보여 의상은 세력 디자인(겹잎형 코트·둥근 씨앗 장신구)으로 정함"
 },
 {
 "id": "U008",
@@ -1298,13 +1299,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "none",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U033.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 이끼·나무껍질 덧댄 크림 후드 작업 재킷, 목에 건 헤드폰, 착용형 무기인 나무·수지 갈퀴 건틀릿(양팔)"
 },
 {
 "id": "U034",
@@ -1430,13 +1431,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U037.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 고양이 귀 모양 고글, 긴 흑발 트윈테일, 크게 웃는 표정, 검은 민소매·잎 모양 짧은 치마, 둥근 씨앗 용기 벨트. △ 소형 체형으로 요청했지만 약 6등신으로 나옴 — 다음 수정 때 더 작게"
 },
 {
 "id": "U038",
@@ -1529,13 +1530,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U040.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 은발·웃는 얼굴, 금 잎 자수 짙은 녹색 겉코트(짧은 어깨 망토) + 금 덩굴 자수 크림 속코트, 산호색 허리띠. 마도서(무기)는 뺌"
 },
 {
 "id": "U041",
@@ -1729,13 +1730,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U046.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 관모(세로 주름·금띠)가 고유 표식, 콧수염·염소수염, 금빛 잎맥 자수 짙은 녹색 겉도포 + 흰 속도포, 가슴 붉은·녹색 옥 장식. 깃부채(무기)는 뺌"
 },
 {
 "id": "U047",
@@ -2725,13 +2726,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U076.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 매우 긴 흑발 하이 포니테일, 연분홍·잎 녹색 단의 흰 짧은 원피스 코트(잎 무늬), 짧은 분홍 스카프, 크림 허리띠, 검은 스타킹·갈색 부츠. 방패(무기)는 뺌. △ 포니테일이 발목까지 와 리깅 때 길이 조정 필요할 수 있음"
 },
 {
 "id": "U077",
