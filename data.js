@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 01:20",
+"updated": "2026-11-20 01:35",
 "factions": [
 {
 "id": "F01",
@@ -404,13 +404,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U006.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 자홍 머리·구릿빛 피부·둥근 선글라스·큰 웃음, 주머니 많은 짧은 갈색 가죽 재킷, 어깨끈에 붉은 봉인납 문서 두루마리, 소매 황동 문장. 금고문 방패(무기)는 뺌"
 },
 {
 "id": "U007",
@@ -635,13 +635,13 @@ window.AC_DATA={
 "formCheck": "동물 귀 여부 확인 필요",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U013.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 원본 그림에 동물 귀(검은 여우·늑대형, 흰 안쪽 털)가 있어 넣음 — 확인 필요 항목. 분홍 브릿지 흑발 단발, 짙은 립, 붉은 안감 검은 법복, 겹친 유리판 깃(고유 표식), 붉은 보석 목걸이. 부채(무기)는 뺌"
 },
 {
 "id": "U014",
@@ -734,13 +734,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U016.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 은발 올백·선글라스·긴 턱의 능청스러운 노신사, 보라 안감 검은 롱코트(깃에 유리판), 검은 정장·넥타이, 가슴 법정 배지. 수정 지팡이(무기)는 뺌"
 },
 {
 "id": "U017",
@@ -1497,13 +1497,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U039.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 녹색 피부 대형 체형, 짙은 녹색 언더컷·녹색 바이저 선글라스, 어깨에 유리 조각 단 검은 가죽 롱코트, 금 목걸이·녹색 펜던트"
 },
 {
 "id": "U040",
@@ -1597,13 +1597,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U042.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 체크 사냥모자·선글라스, 크림 체크 짧은 케이프 코트, 올리브 셔츠, 주머니 많은 가죽 하네스, 등에 봉인 문서 두루마리, 오른팔 황동 보조 장치"
 },
 {
 "id": "U043",
@@ -1895,13 +1895,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "none",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U051.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 갈색 웨이브 낮은 올림머리, 금 문장 버건디 베레모(큰 상징), 짧은 갈색 재킷, 흰 셔츠·붉은 넥타이, 봉인납 허리 가방, 흰 장갑(장갑 속 스틸레토는 안 보이게)"
 },
 {
 "id": "U052",
@@ -1928,13 +1928,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U052.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 흰 수염·동그란 안경 노인, 빨강·파랑·금 줄무늬 둥근 모자, 황동 단추 긴 갈색 코트, 붉은 목도리, 작은 주머니 벨트. 손풍금(무기)은 뺌"
 },
 {
 "id": "U053",
@@ -2160,13 +2160,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U059.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 검은 브릿지 백금발 긴 머리·검은 리본, 짧은 갈색 가죽 재킷, 검은 반바지·허벅지 끈·사이하이 부츠, 왼쪽 허리 큰 계약 원통(고유 표식). △ 가슴 노출을 줄여 달라고 했지만 파인 상의로 나옴 — 다음 수정 때"
 },
 {
 "id": "U060",
@@ -2393,13 +2393,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U066.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 단발 흑발·안경·뾰로통한 표정, 보라 안감 검은 연미 롱코트, 어깨·깃 유리판 장식과 큰 프리즘 브로치(큰 상징). 레이피어(무기)는 뺌"
 },
 {
 "id": "U067",
@@ -2792,13 +2792,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U078.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 단정한 흑발, 한쪽 녹색 렌즈 원형 안경, 깃에 유리판 장식 짙은 회색 재단 코트, 허리 작은 유리병 벨트"
 },
 {
 "id": "U079",
@@ -2858,13 +2858,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U080.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 은발 단발 소녀, 흰·검 줄무늬 체스말 모자(고유 표식), 검은 단·금단추 흰 재단 코트. 유리 기사 소환물은 따로 만들 예정"
 },
 {
 "id": "U081",
