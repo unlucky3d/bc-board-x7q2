@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-19 17:58",
+"updated": "2026-11-19 18:15",
 "factions": [
 {
 "id": "F01",
@@ -469,13 +469,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
-"weapon": "todo",
+"char": "done",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U008.jpg",
-"weaponImg": "",
-"note": "설정: 빨간 정장 흰머리 귀족·거만 / 컨셉 v1: 빨간 3피스 정장 + 왼쪽 어깨 남보라 반망토"
+"weaponImg": "img/weapon/U008.jpg",
+"note": "설정: 빨간 정장 흰머리 귀족·거만 / 컨셉 v1: 빨간 3피스 정장 + 왼쪽 어깨 남보라 반망토 / 무기 v1(11/19): 난간 고정식 월영 박격포 — 짧고 넓은 남보라 포신·은 띠·초승달 문양, 난간 집게 받침·크랭크 바퀴·톱니"
 },
 {
 "id": "U009",
@@ -964,13 +964,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "doing",
-"weapon": "todo",
+"char": "done",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U023.jpg",
-"weaponImg": "",
-"note": "설정: 비챤과 같은 아이돌 설정·남색 머리·금색 눈 / 컨셉 v1: 단발 남색 머리, 검무가 복장(무대의상 대신), 약 7등신"
+"weaponImg": "img/weapon/U023.jpg",
+"note": "설정: 비챤과 같은 아이돌 설정·남색 머리·금색 눈 / 컨셉 v1: 단발 남색 머리, 검무가 복장(무대의상 대신), 약 7등신 / 무기 v1(11/19): 초승달 쌍곡도 한 쌍 — 은빛 초승달 칼날·남보라 상감·별 모양 코등이·초승달 칼자루 끝"
 },
 {
 "id": "U024",
@@ -1003,7 +1003,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U024.jpg",
 "weaponImg": "",
-"note": "설정: 아이돌·주홍 머리·주홍 눈 / 컨셉 v1: 일러스트 자홍 머리 → 주홍, 오른쪽 어깨 앞 사이드 포니테일"
+"note": "설정: 아이돌·주홍 머리·주홍 눈 / 컨셉 v1: 일러스트 자홍 머리 → 주홍, 오른쪽 어깨 앞 사이드 포니테일 / 컨셉 v2(11/19 메모 '헤어스타일과 색상이 많이 다름'): v1 유지 + 머리만 일러스트대로 — 와인빛 붉은 웨이브 머리를 풀고 오른쪽 낮은 작은 묶음·리본, 금빛 하트 핀, 장밋빛 눈"
 },
 {
 "id": "U025",
@@ -1368,7 +1368,7 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U035.jpg",
 "weaponImg": "",
-"note": "설정: 헤어 기어가 특징·백치미 / 컨셉 v1: 둥근 은색 헤어 기어, 멍한 표정, 약 6.5등신"
+"note": "설정: 헤어 기어가 특징·백치미 / 컨셉 v1: 둥근 은색 헤어 기어, 멍한 표정, 약 6.5등신 / 컨셉 v2(11/19 메모 '허리가 너무 얇고 체형이 너무 날씬'): v1 유지 + 허리·골반·다리를 건강하게, 키는 작게 유지"
 },
 {
 "id": "U036",
@@ -1461,13 +1461,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
-"weapon": "todo",
+"char": "done",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U038.jpg",
-"weaponImg": "",
-"note": "설정: 터키 아이스크림 상인·서커스 단원·빨간 모자 / 컨셉 v1: 빨간 페즈, 줄무늬 쇼맨 조끼, 붉은 띠, 반투명 앞치마"
+"weaponImg": "img/weapon/U038.jpg",
+"note": "설정: 터키 아이스크림 상인·서커스 단원·빨간 모자 / 컨셉 v1: 빨간 페즈, 줄무늬 쇼맨 조끼, 붉은 띠, 반투명 앞치마 / 무기 v1(11/19): 장대형 구속 갈고리 — 곧은 남보라 장대·은 고리·가죽 손잡이, 끝에 큰 은빛 초승달 갈고리, 반대쪽 놋쇠 마개(터키 아이스크림 막대 느낌)"
 },
 {
 "id": "U039",
