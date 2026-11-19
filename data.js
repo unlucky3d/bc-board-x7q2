@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 02:20",
+"updated": "2026-11-20 03:30",
 "factions": [
 {
 "id": "F01",
@@ -536,13 +536,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U010.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 긴 흰 곱슬머리·큰 흰 수염·둥근 선글라스, 남색 견장 코트·구리 장식, 등 녹슨 붉은 반망토, 가죽 끈 벨트 (파이프는 뺌)"
 },
 {
 "id": "U011",
@@ -569,13 +569,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U011.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 한쪽 눈 가린 긴 흑발·웃는 얼굴, 크림 셔츠(걷은 소매), 갈색 가죽 조끼·오른쪽 구리 어깨판, 공구 벨트·주머니"
 },
 {
 "id": "U012",
@@ -602,13 +602,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U012.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 금주황 웨이브 머리·능청스런 웃음, 짧은 갈색 견장 코트(붉은 안감·붉은 걷은 소매), 회색 조끼·구리 메달, 교차 벨트"
 },
 {
 "id": "U013",
@@ -701,13 +701,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U015.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 금발 단발, 얼굴 전체 남색 마스크+붉은 셔터 안경(고유 표식), 버건디·크림·청록 줄무늬 겹 코트, 어깨 종이 가면"
 },
 {
 "id": "U016",
@@ -800,13 +800,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U018.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 통통한 큰 체형·검은 곱슬머리·보라 입술, 버건디 벨벳 연출가 롱코트(금 테·크림 소매), 프릴 셔츠, 허리 종이 가면"
 },
 {
 "id": "U019",
@@ -932,13 +932,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U022.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 금발 웨이브 단발·노란 핀·붉은 눈, 남색 후드 망토(청동 테)·크림 안감, 남색 치마·어두운 레깅스·부츠"
 },
 {
 "id": "U023",
@@ -1098,13 +1098,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "none",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U027.jpg",
 "weaponImg": "",
-"note": "11/19 변경: 4 → 5코스트 · 체력·방어력·공격속도 상승, 수복의 반가면의 회복량·보호막 강화 (5코스트 고유 칭호는 아직 없음)"
+"note": "11/19 변경: 4 → 5코스트 · 체력·방어력·공격속도 상승, 수복의 반가면의 회복량·보호막 강화 (5코스트 고유 칭호는 아직 없음) · 컨셉샷 v1(11/20): 긴 흑발·붉은 눈·검은 입가리개·붉은 리본 초커, 버건디·크림 겹 긴 도포(청록 안쪽), 어깨 트임, 허리 반가면"
 },
 {
 "id": "U028",
@@ -1131,13 +1131,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U028.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 적발 투블럭·선글라스·이어피스, 검은 하이칼라 재킷, 남색 롱코트(하늘색 안감·청동 별 표식), 이중 벨트"
 },
 {
 "id": "U029",
@@ -1164,13 +1164,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U029.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 긴 흰 웨이브 머리·검은 공연 모자, 버건디·청록 공연 코트(금 견장), 흰 블라우스·파란 넥타이·코르셋, 흰 프릴 치마·사이하이 부츠"
 },
 {
 "id": "U030",
@@ -1332,13 +1332,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U034.jpg",
 "weaponImg": "",
-"note": "11/19 변경: 4 → 5코스트 · 체력·공격력·방어력 상승, 궤도 파쇄의 공격력 계수·보호막 강화 (5코스트 고유 칭호는 아직 없음)"
+"note": "11/19 변경: 4 → 5코스트 · 체력·공격력·방어력 상승, 궤도 파쇄의 공격력 계수·보호막 강화 (5코스트 고유 칭호는 아직 없음) · 컨셉샷 v1(11/20): 말린 콧수염·염소수염, 남색 차장 모자(붉은 띠), 남색 롱코트·붉은 테·붉은 넥타이, 오른쪽 청동 천구 어깨 갑옷(고유 표식)"
 },
 {
 "id": "U035",
@@ -1398,13 +1398,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U036.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 갈색 똥머리 둘·노란 리본·초커, 버건디·크림 단원 코트(청록 테), 크림 앞치마, 손가락 없는 장갑·부츠"
 },
 {
 "id": "U037",
@@ -1763,13 +1763,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U047.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 짧은 흑발·웃는 얼굴, 염소뿔 귀마개 모자(고유 표식), 흰 긴 작업복(남색 판·금 테), 넓은 벨트·갈색 부츠"
 },
 {
 "id": "U048",
@@ -1796,13 +1796,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U048.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 아주 긴 흑발, 흰 격자 재단 롱코트(남색 판·하늘색 선), 검은 하이칼라 안옷·벨트·부츠"
 },
 {
 "id": "U049",
@@ -2193,13 +2193,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U060.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 연금발 트윈 드릴·검은 리본, 검은 고딕 견장 코트(붉은 안감), 붉은 크라바트·흰 프릴, 짧은 겹치마·허벅지 끈·스타킹"
 },
 {
 "id": "U061",
@@ -2292,13 +2292,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U063.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 붉은 머리, 흰 맞춤 롱 작업복(금 자수), 남색·흰 허리띠, 검은 셔츠·넥타이, 흰 바지·검은 부츠"
 },
 {
 "id": "U064",
@@ -2459,13 +2459,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U068.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 아주 긴 검은 생머리·레이스 머리 리본, 검은 고딕 드레스(남색 프릴 겹치마), 어깨 트임·분리 소매, 왼팔 청동 건틀릿"
 },
 {
 "id": "U069",
@@ -2693,13 +2693,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U075.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 회색 어깨 머리, 검은 하이칼라 코트·등 구리빛 안감 반망토, 검은 바지·긴 부츠"
 },
 {
 "id": "U076",
@@ -2825,13 +2825,13 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "todo",
+"char": "doing",
 "weapon": "todo",
 "model": "todo"
 },
-"conceptImg": "",
+"conceptImg": "img/concept/U079.jpg",
 "weaponImg": "",
-"note": ""
+"note": "컨셉샷 v1(11/20): 단정한 흑발, 흰 후드 롱코트(금 테·격자선) 위 남색 제복, 허리 기록판 홀더, 검은 장갑"
 },
 {
 "id": "U080",
