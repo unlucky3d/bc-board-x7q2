@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-21 01:00",
+"updated": "2026-11-21 01:10",
 "factions": [
 {
 "id": "F01",
@@ -2573,7 +2573,7 @@ window.AC_DATA={
 "formCheck": "2인 유닛인데 일러스트에 1명만 보임 — 구성(2체 / 본체+원격장치) 결정 필요",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
