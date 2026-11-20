@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-21 00:25",
+"updated": "2026-11-21 01:00",
 "factions": [
 {
 "id": "F01",
@@ -239,7 +239,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -273,7 +273,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -307,7 +307,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
@@ -341,7 +341,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -375,7 +375,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -409,7 +409,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -443,7 +443,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -517,7 +517,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U009.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 6
+"memoRound": 7
 },
 {
 "id": "U010",
@@ -544,7 +544,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -578,7 +578,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -612,7 +612,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -645,7 +645,7 @@ window.AC_DATA={
 "formCheck": "동물 귀 여부 확인 필요",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -679,7 +679,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -713,7 +713,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -747,7 +747,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -781,7 +781,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -815,7 +815,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -849,7 +849,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -883,7 +883,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -917,7 +917,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -951,7 +951,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1019,7 +1019,7 @@ window.AC_DATA={
 "group": "이세계아이돌",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U024.jpg",
@@ -1058,7 +1058,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U025.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 6
+"memoRound": 7
 },
 {
 "id": "U026",
@@ -1086,7 +1086,7 @@ window.AC_DATA={
 "group": "이세계아이돌",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U026.jpg",
@@ -1119,7 +1119,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
@@ -1152,7 +1152,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1185,7 +1185,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1219,7 +1219,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1255,7 +1255,7 @@ window.AC_DATA={
 "st": {
 "char": "done",
 "weapon": "doing",
-"model": "doing"
+"model": "done"
 },
 "conceptImg": "img/concept/U031.jpg",
 "weaponImg": "img/weapon/U031.jpg",
@@ -1289,7 +1289,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1323,7 +1323,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
@@ -1357,7 +1357,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1392,7 +1392,7 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "doing",
+"weapon": "done",
 "model": "todo"
 },
 "conceptImg": "img/concept/U035.jpg",
@@ -1424,7 +1424,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1458,7 +1458,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1525,7 +1525,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1559,7 +1559,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1627,7 +1627,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 아카데미",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1661,7 +1661,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1729,7 +1729,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1763,7 +1763,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1803,7 +1803,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U047.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 5
+"memoRound": 6
 },
 {
 "id": "U048",
@@ -1830,7 +1830,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1863,7 +1863,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1897,7 +1897,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1931,7 +1931,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
@@ -1965,7 +1965,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1999,7 +1999,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2033,7 +2033,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2166,7 +2166,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
@@ -2200,7 +2200,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2234,7 +2234,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2268,7 +2268,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2301,7 +2301,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2335,7 +2335,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2369,7 +2369,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "doing",
 "model": "todo"
 },
@@ -2437,7 +2437,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2471,7 +2471,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2505,7 +2505,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2539,7 +2539,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "done",
 "model": "todo"
 },
@@ -2580,7 +2580,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U070.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 6
+"memoRound": 7
 },
 {
 "id": "U071",
@@ -2607,7 +2607,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2709,7 +2709,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2743,7 +2743,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2777,7 +2777,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2811,7 +2811,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2845,7 +2845,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2879,7 +2879,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2913,7 +2913,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2947,7 +2947,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -2981,7 +2981,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "none",
 "model": "todo"
 },
@@ -3015,7 +3015,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "하루고멤",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
