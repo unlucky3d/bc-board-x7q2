@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 23:45",
+"updated": "2026-11-21 00:05",
 "factions": [
 {
 "id": "F01",
@@ -517,7 +517,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U009.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U010",
@@ -1058,7 +1058,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U025.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U026",
@@ -1192,7 +1192,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U029.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U030",
@@ -1532,7 +1532,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U039.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U040",
@@ -1634,7 +1634,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U042.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U043",
@@ -1803,7 +1803,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U047.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 3
+"memoRound": 4
 },
 {
 "id": "U048",
@@ -2342,7 +2342,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U063.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U064",
@@ -2580,7 +2580,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U070.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 4
+"memoRound": 5
 },
 {
 "id": "U071",
