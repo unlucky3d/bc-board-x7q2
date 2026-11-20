@@ -173,13 +173,14 @@ html.share #copyMemos,html.share option[value=memo]{display:none}
 
 <div class="lb" id="lb" hidden role="dialog" aria-label="이미지 크게 보기"><img id="lbimg" alt=""><button class="close" type="button" id="lbx">닫기</button></div>
 
-<script src="data.js"></script>
+<script>/* 11/21 브라우저 캐시 때문에 갱신이 늦게 보이던 문제: data.js 를 매번 새로 받음 */document.write('<script src="data.js?t='+Date.now()+'"><\/script>')</script>
 <script>
 (function(){
 const D=window.AC_DATA; const F={}; D.factions.forEach(f=>F[f.id]=f);
 const C=D.chars;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const V=s=>s?s+(s.includes("?")?"&":"?")+"v="+encodeURIComponent(D.updated||""):s; // 이미지도 갱신 시각마다 새로 받음
 const ST={done:"완료",doing:"검토 중",todo:"미착수",none:"캐릭터에 포함"};
 // 내 메모: 이 브라우저에만 저장 → '내 메모 전체 복사'로 Claude 에게 보내면 공용 비고에 반영
 const MK="ac_board_memos_v1";
@@ -245,7 +246,7 @@ function pass(c){
   if(s==="memo"&&!hasMemo(c))return false;
   return true;
 }
-const img=(src,alt,label)=>src?`<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy"><span class="lbl">${label}</span>`:`<div class="ph">${label}<br>아직 없음</div>`;
+const img=(src,alt,label)=>src?`<img src="${esc(V(src))}" alt="${esc(alt)}" loading="lazy"><span class="lbl">${label}</span>`:`<div class="ph">${label}<br>아직 없음</div>`;
 function card(c){
   return `<button class="card" type="button" data-id="${c.id}" aria-label="${esc(c.name)} 상세">
     <div class="thumbs${c.modelImg?" t3":""}"><div>${img("img/"+c.id+".jpg",c.name+" 일러스트","일러스트")}</div><div>${img(c.conceptImg,c.name+" 컨셉샷","컨셉샷")}</div>${c.modelImg?`<div>${img(c.modelImg,c.name+" 3D 모델","3D")}</div>`:""}</div>
@@ -290,7 +291,7 @@ function regions(){
 // 상세
 function detail(c){
   const f=F[c.fac];
-  const fig=(src,cap,st,extra="")=>`<figure><div class="box">${src?`<img src="${esc(src)}" alt="${esc(c.name)} ${cap}">`:`<div class="ph">${cap}<br>아직 없음</div>`}</div><figcaption><span>${cap}</span>${st?`<span class="st ${st}">${ST[st]}</span>`:""}</figcaption>${extra}</figure>`;
+  const fig=(src,cap,st,extra="")=>`<figure><div class="box">${src?`<img src="${esc(V(src))}" alt="${esc(c.name)} ${cap}">`:`<div class="ph">${cap}<br>아직 없음</div>`}</div><figcaption><span>${cap}</span>${st?`<span class="st ${st}">${ST[st]}</span>`:""}</figcaption>${extra}</figure>`;
   $("#sheet").innerHTML=`
    <div class="shead"><div><div class="cid">${c.id} · ${esc(c.group)}</div><h2 id="m-title">${esc(c.name)}</h2><div class="meta">${esc(f.name)} · ${esc(c.job)} · ${esc(c.pos)} 사거리 ${c.range} · ${c.cost}코스트${c.unique?" · 고유 "+esc(c.unique):""}</div></div><button class="close" type="button" id="x">닫기</button></div>
    ${c.formCheck?`<div class="note">형태 확인 필요 — ${esc(c.formCheck)}</div>`:""}
