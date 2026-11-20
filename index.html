@@ -103,6 +103,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px}
 .btn{font:inherit;font-size:13px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:7px 12px;cursor:pointer}
 .btn.ghost{background:var(--panel);color:var(--ink);border:1px solid var(--line)}
 .cfm{display:block;width:100%;margin-top:6px;padding:8px 10px;border-radius:8px;border:1px solid var(--line,#ccc);background:var(--panel);color:var(--ink);font:inherit;font-size:13px;font-weight:600;cursor:pointer}.cfm[aria-pressed="true"]{background:#2f7d4f;border-color:#2f7d4f;color:#fff}.cfm:disabled{opacity:.6;cursor:default}
+html.share #copyMemos,html.share option[value=memo]{display:none}
 .memo-mark{font-size:11px;color:var(--accent);font-weight:600}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13px;z-index:30}
 @media (max-width:760px){.notes{grid-template-columns:1fr}}
@@ -182,6 +183,9 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const ST={done:"완료",doing:"검토 중",todo:"미착수",none:"캐릭터에 포함"};
 // 내 메모: 이 브라우저에만 저장 → '내 메모 전체 복사'로 Claude 에게 보내면 공용 비고에 반영
 const MK="ac_board_memos_v1";
+// 공유용(GitHub Pages)에서는 비고·내 메모를 숨김 (사용자 11/20)
+const SHARE=/github\.io$/.test(location.hostname);
+if(SHARE)document.documentElement.classList.add("share");
 let memos={}; try{memos=JSON.parse(localStorage.getItem(MK)||"{}")||{}}catch(e){memos={}}
 const saveMemos=()=>{try{localStorage.setItem(MK,JSON.stringify(memos))}catch(e){}};
 // 반영 완료된 메모 자동 비우기: data.js 의 memoRound 가 이 브라우저가 본 회차보다 크면 그 캐릭터의 내 메모를 비움
@@ -251,7 +255,7 @@ function card(c){
         <span class="st ${c.st.model}">3D ${ST[c.st.model]}</span>
       </div>
       ${c.formCheck?`<div class="flag">형태 확인 필요</div>`:""}
-      ${hasMemo(c)?`<div class="memo-mark">✎ 비고 있음</div>`:""}
+      ${!SHARE&&hasMemo(c)?`<div class="memo-mark">✎ 비고 있음</div>`:""}
       ${c.rigVideo?`<div class="vid-mark">▶ 리깅 영상 있음</div>`:""}
     </div></button>`;
 }
@@ -313,13 +317,13 @@ function detail(c){
       <dt>피할 것</dt><dd>${esc(c.avoid)}</dd>
     </dl></div>
    </div>
-   <div class="notes">
+   ${SHARE?"":`<div class="notes">
     <div class="sec"><h4>비고 (공용 — 모두에게 보임)</h4><div class="shared">${c.note?esc(c.note):'<span class="meta">아직 없음</span>'}</div></div>
     <div class="sec"><h4>내 메모</h4><textarea id="memo" placeholder="피드백·수정 요청을 적어 두세요">${esc(memoOf(c.id))}</textarea>
       <div class="hint">${DB?"자동 저장되어 Claude 가 바로 읽습니다. 반영이 끝나면 Claude 가 비웁니다.":"이 브라우저에만 저장됩니다. '내 메모 전체 복사'로 Claude 에게 보내 주세요."}</div></div>
-   </div>`;
+   </div>`}`;
   let mt=null;
-  $("#memo").addEventListener("input",e=>{const v=e.target.value;
+  if($("#memo"))$("#memo").addEventListener("input",e=>{const v=e.target.value;
     if(DB){clearTimeout(mt);mt=setTimeout(()=>{const r=DB.collection("memos").doc(c.id);(v.trim()?r.set({text:v,at:new Date().toISOString()}):r.delete()).catch(()=>toast("메모 저장 실패"));},600);}
     else{if(v.trim())memos[c.id]=v;else delete memos[c.id];saveMemos();}});
   const cb=$("#cfm"); if(cb)cb.addEventListener("click",()=>{const on=sc(c)!=="done";
