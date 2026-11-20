@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-20 21:30",
+"updated": "2026-11-20 22:20",
 "factions": [
 {
 "id": "F01",
@@ -246,7 +246,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U001.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U002",
@@ -280,7 +280,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U002.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U003",
@@ -313,7 +313,8 @@ window.AC_DATA={
 },
 "conceptImg": "img/concept/U003.jpg",
 "weaponImg": "",
-"note": ""
+"note": "",
+"memoRound": 1
 },
 {
 "id": "U004",
@@ -415,7 +416,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U006.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U007",
@@ -449,7 +450,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U007.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U008",
@@ -516,7 +517,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U009.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U010",
@@ -584,7 +585,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U011.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U012",
@@ -651,7 +652,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U013.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U014",
@@ -855,7 +856,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U019.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U020",
@@ -1057,7 +1058,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U025.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U026",
@@ -1191,7 +1192,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U029.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U030",
@@ -1225,7 +1226,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U030.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U031",
@@ -1295,7 +1296,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U032.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U033",
@@ -1329,7 +1330,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U033.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U034",
@@ -1363,7 +1364,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U034.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U035",
@@ -1430,7 +1431,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U036.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U037",
@@ -1464,7 +1465,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U037.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U038",
@@ -1531,7 +1532,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U039.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U040",
@@ -1565,7 +1566,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U040.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U041",
@@ -1633,7 +1634,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U042.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U043",
@@ -1735,7 +1736,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U045.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U046",
@@ -1802,7 +1803,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U047.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U048",
@@ -1971,7 +1972,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U052.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U053",
@@ -2172,7 +2173,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U058.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U059",
@@ -2206,7 +2207,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U059.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U060",
@@ -2341,7 +2342,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U063.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U064",
@@ -2579,7 +2580,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U070.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U071",
@@ -2749,7 +2750,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U075.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U076",
@@ -2817,7 +2818,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U077.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U078",
@@ -2851,7 +2852,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U078.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U079",
@@ -2885,7 +2886,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U079.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U080",
@@ -2987,7 +2988,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U082.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 1
+"memoRound": 2
 },
 {
 "id": "U083",
