@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-22 01:20",
+"updated": "2026-11-22 06:10",
 "factions": [
 {
 "id": "F01",
@@ -240,11 +240,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U001.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U001.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -274,11 +274,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U002.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U002.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -342,11 +342,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U004.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U004.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -376,11 +376,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U005.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U005.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -410,11 +410,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U006.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U006.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -444,11 +444,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U007.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U007.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -511,11 +511,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U009.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U009.jpg",
 "note": "",
 "memoRound": 9
 },
@@ -545,11 +545,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U010.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U010.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -579,11 +579,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U011.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U011.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -613,11 +613,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U012.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U012.jpg",
 "note": ""
 },
 {
@@ -646,11 +646,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U013.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U013.jpg",
 "note": "",
 "memoRound": 4
 },
@@ -680,11 +680,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U014.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U014.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -714,11 +714,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U015.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U015.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -748,11 +748,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U016.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U016.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -782,11 +782,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U017.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U017.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -816,11 +816,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U018.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U018.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -850,11 +850,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U019.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U019.jpg",
 "note": "",
 "memoRound": 4
 },
@@ -884,11 +884,11 @@ window.AC_DATA={
 "group": "고멤 클래식",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U020.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U020.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -918,11 +918,11 @@ window.AC_DATA={
 "group": "이세계아이돌",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U021.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U021.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -952,11 +952,11 @@ window.AC_DATA={
 "group": "이세계아이돌",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U022.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U022.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -1052,11 +1052,11 @@ window.AC_DATA={
 "group": "이세계아이돌",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U025.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U025.jpg",
 "note": "",
 "memoRound": 8
 },
@@ -1153,11 +1153,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U028.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U028.jpg",
 "note": ""
 },
 {
@@ -1186,11 +1186,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U029.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U029.jpg",
 "note": "",
 "memoRound": 5
 },
@@ -1220,11 +1220,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U030.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U030.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -1290,11 +1290,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U032.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U032.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -1358,11 +1358,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U034.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U034.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -1425,11 +1425,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U036.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U036.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -1459,11 +1459,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U037.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U037.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -1526,11 +1526,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U039.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U039.jpg",
 "note": "",
 "memoRound": 6
 },
@@ -1560,11 +1560,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U040.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U040.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -1628,11 +1628,11 @@ window.AC_DATA={
 "group": "고멤 아카데미",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U042.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U042.jpg",
 "note": "",
 "memoRound": 5
 },
@@ -1662,11 +1662,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U043.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U043.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -1730,11 +1730,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U045.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U045.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -1764,11 +1764,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U046.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U046.jpg",
 "note": ""
 },
 {
@@ -1797,11 +1797,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U047.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U047.jpg",
 "note": "",
 "memoRound": 7
 },
@@ -1831,11 +1831,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U048.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U048.jpg",
 "note": ""
 },
 {
@@ -1864,11 +1864,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U049.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U049.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -1898,11 +1898,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U050.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U050.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -1966,11 +1966,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U052.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U052.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -2000,11 +2000,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U053.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U053.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2034,11 +2034,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U054.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U054.jpg",
 "note": ""
 },
 {
@@ -2201,11 +2201,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U059.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U059.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -2235,11 +2235,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U060.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U060.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2269,11 +2269,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U061.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U061.jpg",
 "note": ""
 },
 {
@@ -2302,11 +2302,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U062.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U062.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2336,11 +2336,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U063.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U063.jpg",
 "note": "",
 "memoRound": 6
 },
@@ -2403,11 +2403,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "done"
 },
 "conceptImg": "img/concept/U065.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U065.jpg",
 "note": "",
 "modelImg": "img/model/U065.jpg",
 "rigVideo": "vid/U065.mp4"
@@ -2438,11 +2438,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U066.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U066.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2472,11 +2472,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U067.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U067.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2506,11 +2506,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U068.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U068.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2574,11 +2574,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U070.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U070.jpg",
 "note": "",
 "memoRound": 7
 },
@@ -2608,11 +2608,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U071.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U071.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2710,11 +2710,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U074.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U074.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2744,11 +2744,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U075.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U075.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -2778,11 +2778,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U076.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U076.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2812,11 +2812,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U077.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U077.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -2846,11 +2846,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U078.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U078.jpg",
 "note": "",
 "memoRound": 2
 },
@@ -2880,11 +2880,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U079.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U079.jpg",
 "note": "",
 "memoRound": 3
 },
@@ -2914,11 +2914,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U080.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U080.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -2948,11 +2948,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U081.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U081.jpg",
 "note": "",
 "memoRound": 1
 },
@@ -3016,11 +3016,11 @@ window.AC_DATA={
 "group": "하루고멤",
 "st": {
 "char": "done",
-"weapon": "todo",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U083.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U083.jpg",
 "note": "",
 "memoRound": 1
 }
