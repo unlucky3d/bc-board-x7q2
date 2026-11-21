@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-22 01:05",
+"updated": "2026-11-22 01:20",
 "factions": [
 {
 "id": "F01",
@@ -510,7 +510,7 @@ window.AC_DATA={
 "formCheck": "헬멧·기계형 머리 형태 확인 필요",
 "group": "고멤 클래식",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
