@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-21 01:10",
+"updated": "2026-11-22 00:50",
 "factions": [
 {
 "id": "F01",
@@ -517,7 +517,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U009.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 7
+"memoRound": 8
 },
 {
 "id": "U010",
@@ -1058,7 +1058,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U025.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 7
+"memoRound": 8
 },
 {
 "id": "U026",
@@ -1803,7 +1803,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U047.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 6
+"memoRound": 7
 },
 {
 "id": "U048",
