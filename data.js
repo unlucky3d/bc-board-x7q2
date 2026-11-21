@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-22 00:50",
+"updated": "2026-11-22 01:05",
 "factions": [
 {
 "id": "F01",
@@ -517,7 +517,7 @@ window.AC_DATA={
 "conceptImg": "img/concept/U009.jpg",
 "weaponImg": "",
 "note": "",
-"memoRound": 8
+"memoRound": 9
 },
 {
 "id": "U010",
@@ -1051,7 +1051,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "이세계아이돌",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
@@ -1796,7 +1796,7 @@ window.AC_DATA={
 "formCheck": "",
 "group": "고멤 하드코어",
 "st": {
-"char": "doing",
+"char": "done",
 "weapon": "todo",
 "model": "todo"
 },
