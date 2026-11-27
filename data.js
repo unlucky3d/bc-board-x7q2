@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-22 06:10",
+"updated": "2026-11-28 01:20",
 "factions": [
 {
 "id": "F01",
@@ -1920,8 +1920,8 @@ window.AC_DATA={
 "sig": "결정타: 봉인이 풀리는 섬광",
 "outfit": "짧은 재킷, 허리 가방, 봉인 왁스",
 "weapon": "장갑 속 스프링 스틸레토",
-"wform": "캐릭터에 포함(착용형)",
-"worn": true,
+"wform": "한손 (스틸레토)",
+"worn": false,
 "detail": "높음 — 독특한 실루엣 + 큰 상징 1개",
 "rig": "A 표준",
 "trait": "",
@@ -1932,11 +1932,11 @@ window.AC_DATA={
 "group": "고멤 하드코어",
 "st": {
 "char": "done",
-"weapon": "none",
+"weapon": "doing",
 "model": "todo"
 },
 "conceptImg": "img/concept/U051.jpg",
-"weaponImg": "",
+"weaponImg": "img/weapon/U051.jpg",
 "note": "",
 "memoRound": 1
 },
