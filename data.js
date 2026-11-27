@@ -1,5 +1,5 @@
 window.AC_DATA={
-"updated": "2026-11-28 01:20",
+"updated": "2026-11-28 03:17",
 "factions": [
 {
 "id": "F01",
